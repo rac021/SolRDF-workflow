@@ -1,0 +1,77 @@
+[PrefixDeclaration]
+:		http://www.anaee/fr/soere/ola#
+rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
+rdfs:		http://www.w3.org/2000/01/rdf-schema#
+oboe-core:	http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#
+
+[SourceDeclaration]
+sourceUri	dbLacsMapping
+connectionUrl	jdbc:postgresql://127.0.0.1/ola?sendBufferSize=5000
+username	ryahiaoui
+password	yahiaoui
+driverClass	org.postgresql.Driver
+
+[MappingDeclaration] @collection [[
+mappingId	synthesis-physicoChimie-measurement-unit-name
+target		:measurement/unit/name/{unite_id} a oboe-core:Measurement ; oboe-core:usesStandard :Unite ; oboe-core:ofCharacteristic :Name ; oboe-core:hasValue {unite_name} . 
+source		select distinct  unite_id, unite_name from physicochimiebysitevariableyear
+
+mappingId	synthesis-physicoChimie-measurement-year
+target		:measurement/year/{site_code}-{datatype_code}-{variable_code} a oboe-core:Measurement ; oboe-core:ofCharacteristic :Year ; oboe-core:usesStandard :DateTime ; oboe-core:hasValue {year}^^xsd:integer . 
+source		select site_code, datatype_code, variable_code, year  from physicochimiebysitevariableyear
+
+mappingId	synthesis-physicoChimie-measurement-count
+target		:synthesis/measurement/countData/{site_code}-{datatype_code}-{variable_code}-{year} a oboe-core:Measurement ; oboe-core:ofCharacteristic :Count ; oboe-core:usesStandard :Number ; oboe-core:hasValue {nb_data}^^xsd:integer . 
+source		select site_code , variable_code,datatype_code, year, nb_data  from physicochimiebysitevariableyear
+
+mappingId	synthesis-physicoChimie-categorie-name
+target		:synthesis/measurement/variableCategory/name/{datatype_code}-{variable_code} a oboe-core:Measurement ; oboe-core:usesStandard :VariableCategoryNamingStandard ; oboe-core:ofCharacteristic :Name ; oboe-core:hasValue "{datatype_code}_Categorie"^^rdfs:Literal . 
+source		select distinct datatype_code AS datatype_code , variable_code AS variable_code  from physicochimiebysitevariableyear
+
+mappingId	synthesis-physicoChimie-variable-name
+target		:synthesis/measurement/variable/name/{variable_code} a oboe-core:Measurement ; oboe-core:usesStandard :VariableNamingStandard ; oboe-core:ofCharacteristic :Name ; oboe-core:hasValue {variable_name} . 
+source		select distinct variable_code , variable_name   from physicochimiebysitevariableyear
+
+mappingId	observation-physicoChimie-variableSynthesis
+target		:synthesis/observation/physicoChimie/{site_code}-{datatype_code}-{variable_code} a oboe-core:Observation ; oboe-core:ofEntity :VariableSynthesis ; oboe-core:hasMeasurement :measurement/unit/name/{unite_id} , :measurement/year/{site_code}-{datatype_code}-{variable_code} , :synthesis/measurement/countData/{site_code}-{datatype_code}-{variable_code}-{year} , :synthesis/measurement/variable/name/{variable_code} . 
+source		select site_code, datatype_code,  variable_code, unite_id, year from physicochimiebysitevariableyear
+
+mappingId	synthesis-physicoChimie-experimentalSite-Name
+target		:synthesis/measurement/experimentalSite/name/{site_code} a oboe-core:Measurement ; oboe-core:ofCharacteristic :Name ; oboe-core:usesStandard :SiteNamingStandard ; oboe-core:hasValue {site_name}^^xsd:string . 
+source		select distinct site_code, site_name from physicochimiebysitevariableyear
+
+mappingId	synthesis-physicoChimie-observation-experimentalSite
+target		:synthesis/observation/experimentalSite/{site_code} a oboe-core:Observation ; oboe-core:ofEntity :ExperimentalSite ; oboe-core:hasMeasurement :synthesis/measurement/experimentalSite/name/{site_code} . 
+source		select distinct site_code, site_name from physicochimiebysitevariableyear
+
+mappingId	synthesis-physicoChimie-observation-variableCategorie
+target		:synthesis/observation/categoryVariable/{datatype_code}{variable_code} a oboe-core:Observation ; oboe-core:ofEntity :Name , :VariableCategory ; oboe-core:hasMeasurement :synthesis/measurement/variableCategory/name/{datatype_code}-{variable_code} ; oboe-core:hasContext :synthesis/observation/experimentalSite/{site_code} . 
+source		select distinct site_code, datatype_code, variable_code from physicochimiebysitevariableyear
+
+mappingId	synthesis-physicoChimie-observation-SynthesisVariable
+target		:synthesis/observation/physicoChimie/{site_code}-{datatype_code}-{variable_code} a oboe-core:Observation ; oboe-core:ofEntity :VariableSynthesis ; oboe-core:hasMeasurement :synthesis/measurement/variable/name/{variable_code} , :synthesis/measurement/unit/name/{unite_id} , :synthesis/measurement/year/{site_code}-{datatype_code}-{variable_code} , :synthesis/measurement/countData/{site_code}-{datatype_code}-{variable_code}-{year} , :synthesis/measurement/variableCategory/name/{datatype_code}-{variable_code} ; oboe-core:hasContext :synthesis/observation/variableCategory/{datatype_code}-{variable_code} , :synthesis/observation/solutes/{site_code}-{datatype_code}-{variable_code}-{year} . 
+source		select site_code, datatype_code, variable_code, year, unite_id  from physicochimiebysitevariableyear
+
+mappingId	synthesis-physicoChimie-measurement-variable-solute
+target		:synthesis/measurement/solutes/{site_code}-{datatype_code}-{variable_code}-{year} a oboe-core:Measurement ; oboe-core:ofCharacteristic :Concentration ; oboe-core:usesStandard :MolePerMeterCubed ; oboe-core:hasValue {avg} . 
+source		SELECT chimiesynthesisvalue.site AS site_code,
+			    site_glacpe_sit.nom AS site_name,
+			    datatype.code AS datatype_code,
+			    variable_glacpe_varg.code AS variable_code,   
+			    to_char(chimiesynthesisvalue.date, 'YYYY'::text) AS year,
+			    count(*) AS nb_data,
+			    avg(chimiesynthesisvalue.valuefloat) AS avg
+			   FROM unite
+			     JOIN datatypevariableuniteglacpe ON unite.id = datatypevariableuniteglacpe.uni_id
+			     JOIN datatype ON datatypevariableuniteglacpe.dty_id = datatype.id
+			     JOIN variable_glacpe_varg ON datatypevariableuniteglacpe.var_id = variable_glacpe_varg.id
+			     JOIN chimiesynthesisvalue ON variable_glacpe_varg.nom::text = chimiesynthesisvalue.variable::text
+			     JOIN site_glacpe_sit ON chimiesynthesisvalue.site::text = site_glacpe_sit.code::text
+			  WHERE datatype.id = 11
+			  GROUP BY chimiesynthesisvalue.site, site_glacpe_sit.nom, datatype.code, datatype.name, variable_glacpe_varg.code, chimiesynthesisvalue.variable, unite.code, unite.nom, to_char(chimiesynthesisvalue.date, 'YYYY'::text)
+
+mappingId	synthesis-physicoChimie-observation-soluteselect site_code, datatype_code, variable_code, year, unite_id  from physicochimiebysitevariableyear
+target		:synthesis/observation/solutes/{site_code}-{datatype_code}-{variable_code}-{year} a oboe-core:Observation ; oboe-core:ofEntity :Solute ; oboe-core:hasMeasurement :synthesis/measurement/solutes/{site_code}-{datatype_code}-{variable_code}-{year} . 
+source		select site_code, datatype_code, variable_code, year from physicochimiebysitevariableyear
+]]
+

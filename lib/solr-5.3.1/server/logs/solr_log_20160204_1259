@@ -1,0 +1,409 @@
+2016-02-04 11:59:29.115 INFO  (main) [   ] o.e.j.u.log Logging initialized @220ms
+2016-02-04 11:59:29.248 INFO  (main) [   ] o.e.j.s.Server jetty-9.2.11.v20150529
+2016-02-04 11:59:29.258 WARN  (main) [   ] o.e.j.s.h.RequestLogHandler !RequestLog
+2016-02-04 11:59:29.260 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:/home/ryahiaoui/Bureau/solr-5.3.1/server/contexts/] at interval 0
+2016-02-04 11:59:29.542 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2016-02-04 11:59:29.550 WARN  (main) [   ] o.e.j.s.SecurityHandler ServletContext@o.e.j.w.WebAppContext@271053e1{/solr,file:/home/ryahiaoui/Bureau/solr-5.3.1/server/solr-webapp/webapp/,STARTING}{/home/ryahiaoui/Bureau/solr-5.3.1/server/solr-webapp/webapp} has uncovered http methods for path: /
+2016-02-04 11:59:29.555 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init(): WebAppClassLoader=1164371389@4566e5bd
+2016-02-04 11:59:29.565 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-02-04 11:59:29.565 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdf
+2016-02-04 11:59:29.567 INFO  (main) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdf/'
+2016-02-04 11:59:29.673 INFO  (main) [   ] o.a.s.c.c.SolrZkClient Using default ZkCredentialsProvider
+2016-02-04 11:59:29.696 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+2016-02-04 11:59:29.787 INFO  (zkCallback-1-thread-1) [   ] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@5e488840 name:ZooKeeperConnection Watcher:localhost:2181 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-02-04 11:59:29.787 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2016-02-04 11:59:29.787 INFO  (main) [   ] o.a.s.c.c.SolrZkClient Using default ZkACLProvider
+2016-02-04 11:59:29.805 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Loading solr.xml from SolrHome (not found in ZooKeeper)
+2016-02-04 11:59:29.806 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdf/solr.xml
+2016-02-04 11:59:29.853 INFO  (main) [   ] o.a.s.c.CoresLocator Config-defined core root directory: /home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdf
+2016-02-04 11:59:29.868 INFO  (main) [   ] o.a.s.c.CoreContainer New CoreContainer 1525409936
+2016-02-04 11:59:29.868 INFO  (main) [   ] o.a.s.c.CoreContainer Loading cores into CoreContainer [instanceDir=/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdf/]
+2016-02-04 11:59:29.869 INFO  (main) [   ] o.a.s.c.CoreContainer loading shared library: /home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdf/lib
+2016-02-04 11:59:29.869 WARN  (main) [   ] o.a.s.c.SolrResourceLoader Can't find (or read) directory to add to classloader: lib (resolved as: /home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdf/lib).
+2016-02-04 11:59:29.882 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory created with socketTimeout : 0,connTimeout : 0,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,
+2016-02-04 11:59:30.029 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2016-02-04 11:59:30.031 INFO  (main) [   ] o.a.s.l.LogWatcher SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+2016-02-04 11:59:30.032 INFO  (main) [   ] o.a.s.l.LogWatcher Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+2016-02-04 11:59:30.032 INFO  (main) [   ] o.a.s.c.ZkContainer Zookeeper client=localhost:2181
+2016-02-04 11:59:30.040 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+2016-02-04 11:59:30.047 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@7563d3d6 name:ZooKeeperConnection Watcher:localhost:2181 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-02-04 11:59:30.047 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2016-02-04 11:59:30.102 INFO  (main) [   ] o.a.s.c.c.ZkStateReader Updating cluster state from ZooKeeper... 
+2016-02-04 12:00:01.350 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ZkStateReader A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 1)
+2016-02-04 12:00:01.369 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ZkStateReader Updated cluster state version to 15
+2016-02-04 12:00:03.145 INFO  (main) [   ] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/127.0.1.1:6981_solr
+2016-02-04 12:00:03.182 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /live_nodes/127.0.1.1:6981_solr
+2016-02-04 12:00:03.193 INFO  (main) [   ] o.a.s.c.Overseer Overseer (id=null) closing
+2016-02-04 12:00:03.199 INFO  (main) [   ] o.a.s.c.LeaderElector Joined leadership election with path: /overseer_elect/election/95327824591781891-127.0.1.1:6981_solr-n_0000000005
+2016-02-04 12:00:03.202 INFO  (main) [   ] o.a.s.c.LeaderElector Watching path /overseer_elect/election/95327824591781893-127.0.1.1:6982_solr-n_0000000004 to know if I could be the leader
+2016-02-04 12:00:03.246 INFO  (main) [   ] o.a.s.c.CoreContainer Security conf doesn't exist. Skipping setup for authorization module.
+2016-02-04 12:00:03.246 INFO  (main) [   ] o.a.s.c.CoreContainer No authentication plugin used.
+2016-02-04 12:00:03.270 INFO  (main) [   ] o.a.s.c.CoresLocator Looking for core definitions underneath /home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdf
+2016-02-04 12:00:03.289 INFO  (main) [   ] o.a.s.c.SolrCore Created CoreDescriptor: {name=, config=solrconfig.xml, transient=false, schema=schema.xml, loadOnStartup=true, configSetProperties=configsetprops.json, instanceDir=/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdf/store, absoluteInstDir=/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdf/store/, dataDir=data/, shard=}
+2016-02-04 12:00:03.290 INFO  (main) [   ] o.a.s.c.CoresLocator Found core  in /home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdf/store/
+2016-02-04 12:00:03.290 INFO  (main) [   ] o.a.s.c.CoresLocator Found 1 core definitions
+2016-02-04 12:00:03.292 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6981_solr) [c:   x:] o.a.s.c.ZkController publishing state=down
+2016-02-04 12:00:03.292 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6981_solr) [c:   x:] o.a.s.c.ZkController numShards not found on descriptor - reading it from system property
+2016-02-04 12:00:03.293 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter user.dir=/home/ryahiaoui/Bureau/solr-5.3.1/server
+2016-02-04 12:00:03.293 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init() done
+2016-02-04 12:00:03.299 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6981_solr) [c:   x:] o.a.s.c.ZkController look for our core node name
+2016-02-04 12:00:03.305 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@271053e1{/solr,file:/home/ryahiaoui/Bureau/solr-5.3.1/server/solr-webapp/webapp/,AVAILABLE}{/home/ryahiaoui/Bureau/solr-5.3.1/server/solr-webapp/webapp}
+2016-02-04 12:00:03.312 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@7dfd3c81{HTTP/1.1}{0.0.0.0:6981}
+2016-02-04 12:00:03.312 INFO  (main) [   ] o.e.j.s.Server Started @34419ms
+2016-02-04 12:00:03.785 INFO  (qtp428746855-22) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1454587203770} status=0 QTime=7 
+2016-02-04 12:00:03.819 INFO  (qtp428746855-13) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1454587203804} status=0 QTime=11 
+2016-02-04 12:00:12.350 INFO  (qtp428746855-19) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1454587212345} status=0 QTime=0 
+2016-02-04 12:00:12.426 INFO  (qtp428746855-22) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1454587212368} status=0 QTime=2 
+2016-02-04 12:00:13.729 INFO  (qtp428746855-17) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1454587213726} status=0 QTime=0 
+2016-02-04 12:00:13.753 INFO  (qtp428746855-38) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1454587213747} status=0 QTime=3 
+2016-02-04 12:00:14.750 INFO  (qtp428746855-39) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1454587214747} status=0 QTime=0 
+2016-02-04 12:00:14.769 INFO  (qtp428746855-22) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1454587214762} status=0 QTime=3 
+2016-02-04 12:00:15.489 INFO  (qtp428746855-40) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1454587215486} status=0 QTime=0 
+2016-02-04 12:00:15.510 INFO  (qtp428746855-39) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1454587215504} status=0 QTime=3 
+2016-02-04 12:00:16.661 INFO  (qtp428746855-15) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1454587216658} status=0 QTime=0 
+2016-02-04 12:00:16.679 INFO  (qtp428746855-38) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1454587216672} status=0 QTime=3 
+2016-02-04 12:00:18.765 INFO  (qtp428746855-13) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1454587218762} status=0 QTime=0 
+2016-02-04 12:00:18.791 INFO  (qtp428746855-38) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1454587218786} status=0 QTime=2 
+2016-02-04 12:05:23.328 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6981_solr) [c:   x:] o.a.s.c.ZkController waiting to find shard id in clusterstate for 
+2016-02-04 12:10:43.362 ERROR (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6981_solr) [c:   x:] o.a.s.c.CoreContainer Error creating core []: Could not get shard id for core: 
+org.apache.solr.common.SolrException: Could not get shard id for core: 
+	at org.apache.solr.cloud.ZkController.waitForShardId(ZkController.java:1495)
+	at org.apache.solr.cloud.ZkController.doGetShardIdAndNodeNameProcess(ZkController.java:1441)
+	at org.apache.solr.cloud.ZkController.preRegister(ZkController.java:1542)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:718)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:443)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:434)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor$1.run(ExecutorUtil.java:210)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-02-04 12:10:43.363 ERROR (coreContainerWorkExecutor-2-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be created
+java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core []
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.apache.solr.core.CoreContainer$2.run(CoreContainer.java:472)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor$1.run(ExecutorUtil.java:210)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Unable to create core []
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:737)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:443)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:434)
+	... 5 more
+Caused by: org.apache.solr.common.SolrException: Could not get shard id for core: 
+	at org.apache.solr.cloud.ZkController.waitForShardId(ZkController.java:1495)
+	at org.apache.solr.cloud.ZkController.doGetShardIdAndNodeNameProcess(ZkController.java:1441)
+	at org.apache.solr.cloud.ZkController.preRegister(ZkController.java:1542)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:718)
+	... 7 more
+2016-02-04 12:18:18.039 INFO  (qtp428746855-40) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=3 
+2016-02-04 12:18:18.067 INFO  (qtp428746855-22) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :clusterstatus with params action=CLUSTERSTATUS&wt=json 
+2016-02-04 12:18:18.071 INFO  (qtp428746855-22) [   ] o.a.s.c.c.ZkStateReader Load collection config from:/collections/portail
+2016-02-04 12:18:18.071 INFO  (qtp428746855-22) [   ] o.a.s.c.c.ZkStateReader path=/collections/portail configName=portail specified config exists in ZooKeeper
+2016-02-04 12:18:18.071 INFO  (qtp428746855-22) [   ] o.a.s.c.c.ZkStateReader Load collection config from:/collections/store
+2016-02-04 12:18:18.072 INFO  (qtp428746855-22) [   ] o.a.s.c.c.ZkStateReader path=/collections/store configName=store specified config exists in ZooKeeper
+2016-02-04 12:18:18.072 INFO  (qtp428746855-22) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json} status=0 QTime=10 
+2016-02-04 12:18:18.258 INFO  (qtp428746855-13) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :list with params action=list&wt=json 
+2016-02-04 12:18:18.259 INFO  (qtp428746855-13) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/collections params={action=list&wt=json} status=0 QTime=0 
+2016-02-04 12:18:28.588 INFO  (qtp428746855-40) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=2 
+2016-02-04 12:18:28.611 INFO  (qtp428746855-22) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :clusterstatus with params action=CLUSTERSTATUS&wt=json 
+2016-02-04 12:18:28.613 INFO  (qtp428746855-22) [   ] o.a.s.c.c.ZkStateReader Load collection config from:/collections/portail
+2016-02-04 12:18:28.613 INFO  (qtp428746855-22) [   ] o.a.s.c.c.ZkStateReader path=/collections/portail configName=portail specified config exists in ZooKeeper
+2016-02-04 12:18:28.613 INFO  (qtp428746855-22) [   ] o.a.s.c.c.ZkStateReader Load collection config from:/collections/store
+2016-02-04 12:18:28.614 INFO  (qtp428746855-22) [   ] o.a.s.c.c.ZkStateReader path=/collections/store configName=store specified config exists in ZooKeeper
+2016-02-04 12:18:28.614 INFO  (qtp428746855-22) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json} status=0 QTime=3 
+2016-02-04 12:18:28.730 INFO  (qtp428746855-13) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :list with params action=list&wt=json 
+2016-02-04 12:18:28.730 INFO  (qtp428746855-13) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/collections params={action=list&wt=json} status=0 QTime=0 
+2016-02-04 12:18:28.734 INFO  (qtp428746855-40) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :create with params replicationFactor=1&maxShardsPerNode=1&collection.configName=portail2&name=portailRR&action=CREATE&numShards=2&wt=json 
+2016-02-04 12:18:28.824 INFO  (zkCallback-3-thread-2-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ZkStateReader A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+2016-02-04 12:18:28.838 INFO  (zkCallback-3-thread-2-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ZkStateReader Updated cluster state version to 16
+2016-02-04 12:18:28.956 INFO  (qtp428746855-22) [   ] o.a.s.h.a.CoreAdminHandler core create command qt=/admin/cores&collection.configName=portail2&name=portailRR_shard2_replica1&action=CREATE&numShards=2&collection=portailRR&shard=shard2&wt=javabin&version=2
+2016-02-04 12:18:28.958 INFO  (qtp428746855-22) [   ] o.a.s.c.SolrCore Created CoreDescriptor: {name=portailRR_shard2_replica1, config=solrconfig.xml, transient=false, schema=schema.xml, loadOnStartup=true, configSetProperties=configsetprops.json, instanceDir=portailRR_shard2_replica1, collection=portailRR, absoluteInstDir=/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdf/portailRR_shard2_replica1/, numShards=2, dataDir=data/, shard=shard2}
+2016-02-04 12:18:28.962 INFO  (qtp428746855-22) [c:portailRR s:shard2  x:portailRR_shard2_replica1] o.a.s.c.ZkController publishing state=down
+2016-02-04 12:18:28.970 INFO  (qtp428746855-22) [c:portailRR s:shard2  x:portailRR_shard2_replica1] o.a.s.c.ZkController Registering watch for external collection portailRR
+2016-02-04 12:18:28.970 INFO  (qtp428746855-22) [c:portailRR s:shard2  x:portailRR_shard2_replica1] o.a.s.c.c.ZkStateReader addZkWatch portailRR
+2016-02-04 12:18:28.971 INFO  (qtp428746855-22) [c:portailRR s:shard2  x:portailRR_shard2_replica1] o.a.s.c.c.ZkStateReader Updating collection state at /collections/portailRR/state.json from ZooKeeper... 
+2016-02-04 12:18:28.978 INFO  (qtp428746855-22) [c:portailRR s:shard2  x:portailRR_shard2_replica1] o.a.s.c.c.ZkStateReader Updating data for portailRR to ver 0 
+2016-02-04 12:18:28.979 INFO  (qtp428746855-22) [c:portailRR s:shard2  x:portailRR_shard2_replica1] o.a.s.c.ZkController look for our core node name
+2016-02-04 12:18:29.020 INFO  (zkCallback-3-thread-2-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ZkStateReader A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/portailRR/state.json for collection portailRR has occurred - updating... (live nodes size: 2)
+2016-02-04 12:18:29.021 INFO  (zkCallback-3-thread-2-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ZkStateReader Updating data for portailRR to ver 1 
+2016-02-04 12:18:29.979 INFO  (qtp428746855-22) [c:portailRR s:shard2  x:portailRR_shard2_replica1] o.a.s.c.ZkController waiting to find shard id in clusterstate for portailRR_shard2_replica1
+2016-02-04 12:18:29.979 INFO  (qtp428746855-22) [c:portailRR s:shard2  x:portailRR_shard2_replica1] o.a.s.c.ZkController Check for collection zkNode:portailRR
+2016-02-04 12:18:29.980 INFO  (qtp428746855-22) [c:portailRR s:shard2  x:portailRR_shard2_replica1] o.a.s.c.ZkController Collection zkNode exists
+2016-02-04 12:18:29.980 INFO  (qtp428746855-22) [c:portailRR s:shard2  x:portailRR_shard2_replica1] o.a.s.c.c.ZkStateReader Load collection config from:/collections/portailRR
+2016-02-04 12:18:29.982 INFO  (qtp428746855-22) [c:portailRR s:shard2  x:portailRR_shard2_replica1] o.a.s.c.c.ZkStateReader path=/collections/portailRR configName=portail2 specified config exists in ZooKeeper
+2016-02-04 12:18:29.982 INFO  (qtp428746855-22) [c:portailRR s:shard2  x:portailRR_shard2_replica1] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdf/portailRR_shard2_replica1/'
+2016-02-04 12:18:29.992 INFO  (qtp428746855-22) [c:portailRR s:shard2  x:portailRR_shard2_replica1] o.a.s.c.Config loaded config solrconfig.xml with version 0 
+2016-02-04 12:18:30.013 INFO  (qtp428746855-22) [c:portailRR s:shard2  x:portailRR_shard2_replica1] o.a.s.c.SolrConfig current version of requestparams : -1
+2016-02-04 12:18:30.040 INFO  (qtp428746855-22) [c:portailRR s:shard2  x:portailRR_shard2_replica1] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.2.1
+2016-02-04 12:18:30.102 INFO  (qtp428746855-22) [c:portailRR s:shard2  x:portailRR_shard2_replica1] o.a.s.c.Config Loaded SolrConfig: solrconfig.xml
+2016-02-04 12:18:30.110 INFO  (qtp428746855-22) [c:portailRR s:shard2  x:portailRR_shard2_replica1] o.a.s.s.IndexSchema Reading Solr Schema from /configs/portail2/schema.xml
+2016-02-04 12:18:30.117 INFO  (qtp428746855-22) [c:portailRR s:shard2  x:portailRR_shard2_replica1] o.a.s.s.IndexSchema [portailRR_shard2_replica1] Schema name=SolRDF
+2016-02-04 12:18:30.174 INFO  (qtp428746855-22) [c:portailRR s:shard2  x:portailRR_shard2_replica1] o.a.s.s.IndexSchema unique key field: id
+2016-02-04 12:18:30.177 INFO  (qtp428746855-22) [c:portailRR s:shard2  x:portailRR_shard2_replica1] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/configs/portail2', cwd=/home/ryahiaoui/Bureau/solr-5.3.1/server
+2016-02-04 12:18:30.178 INFO  (qtp428746855-22) [c:portailRR s:shard2  x:portailRR_shard2_replica1] o.a.s.c.CoreContainer Creating SolrCore 'portailRR_shard2_replica1' using configuration from collection portailRR
+2016-02-04 12:18:30.179 INFO  (qtp428746855-22) [c:portailRR s:shard2 r:core_node1 x:portailRR_shard2_replica1] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2016-02-04 12:18:30.191 INFO  (qtp428746855-22) [c:portailRR s:shard2 r:core_node1 x:portailRR_shard2_replica1] o.a.s.c.SolrCore [[portailRR_shard2_replica1] ] Opening new SolrCore at [/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdf/portailRR_shard2_replica1/], dataDir=[null]
+2016-02-04 12:18:30.192 INFO  (qtp428746855-22) [c:portailRR s:shard2 r:core_node1 x:portailRR_shard2_replica1] o.a.s.c.SolrCore JMX monitoring not detected for core: portailRR_shard2_replica1
+2016-02-04 12:18:30.207 INFO  (qtp428746855-22) [c:portailRR s:shard2 r:core_node1 x:portailRR_shard2_replica1] o.a.s.c.CachingDirectoryFactory return new directory for /home/ryahiaoui/Bureau/solr-5.3.1/data/node_01/portailRR_shard2_replica1/data
+2016-02-04 12:18:30.208 INFO  (qtp428746855-22) [c:portailRR s:shard2 r:core_node1 x:portailRR_shard2_replica1] o.a.s.c.SolrCore New index directory detected: old=null new=/home/ryahiaoui/Bureau/solr-5.3.1/data/node_01/portailRR_shard2_replica1/data/index/
+2016-02-04 12:18:30.209 WARN  (qtp428746855-22) [c:portailRR s:shard2 r:core_node1 x:portailRR_shard2_replica1] o.a.s.c.SolrCore [portailRR_shard2_replica1] Solr index directory '/home/ryahiaoui/Bureau/solr-5.3.1/data/node_01/portailRR_shard2_replica1/data/index' doesn't exist. Creating new index...
+2016-02-04 12:18:30.223 INFO  (qtp428746855-22) [c:portailRR s:shard2 r:core_node1 x:portailRR_shard2_replica1] o.a.s.c.CachingDirectoryFactory return new directory for /home/ryahiaoui/Bureau/solr-5.3.1/data/node_01/portailRR_shard2_replica1/data/index
+2016-02-04 12:18:30.367 INFO  (qtp428746855-22) [c:portailRR s:shard2 r:core_node1 x:portailRR_shard2_replica1] o.a.s.c.SolrCore SolrDeletionPolicy.onCommit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/ryahiaoui/Bureau/solr-5.3.1/data/node_01/portailRR_shard2_replica1/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3fd7ebc0; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+2016-02-04 12:18:30.368 INFO  (qtp428746855-22) [c:portailRR s:shard2 r:core_node1 x:portailRR_shard2_replica1] o.a.s.c.SolrCore newest commit generation = 1
+2016-02-04 12:18:30.369 INFO  (OldIndexDirectoryCleanupThreadForCore-portailRR_shard2_replica1) [c:portailRR s:shard2 r:core_node1 x:portailRR_shard2_replica1] o.a.s.c.SolrCore Looking for old index directories to cleanup for core portailRR_shard2_replica1 in /home/ryahiaoui/Bureau/solr-5.3.1/data/node_01/portailRR_shard2_replica1/data/
+2016-02-04 12:18:30.373 INFO  (qtp428746855-22) [c:portailRR s:shard2 r:core_node1 x:portailRR_shard2_replica1] o.a.s.c.SolrCore [portailRR_shard2_replica1]  CLOSING SolrCore org.apache.solr.core.SolrCore@d7f498c
+2016-02-04 12:18:30.373 INFO  (qtp428746855-22) [c:portailRR s:shard2 r:core_node1 x:portailRR_shard2_replica1] o.a.s.u.SolrCoreState Closing SolrCoreState
+2016-02-04 12:18:30.373 INFO  (qtp428746855-22) [c:portailRR s:shard2 r:core_node1 x:portailRR_shard2_replica1] o.a.s.u.DefaultSolrCoreState SolrCoreState ref count has reached 0 - closing IndexWriter
+2016-02-04 12:18:30.373 INFO  (qtp428746855-22) [c:portailRR s:shard2 r:core_node1 x:portailRR_shard2_replica1] o.a.s.c.SolrCore [portailRR_shard2_replica1] Closing main searcher on request.
+2016-02-04 12:18:30.373 INFO  (qtp428746855-22) [c:portailRR s:shard2 r:core_node1 x:portailRR_shard2_replica1] o.a.s.c.CachingDirectoryFactory Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+2016-02-04 12:18:30.374 INFO  (qtp428746855-22) [c:portailRR s:shard2 r:core_node1 x:portailRR_shard2_replica1] o.a.s.c.CachingDirectoryFactory looking to close /home/ryahiaoui/Bureau/solr-5.3.1/data/node_01/portailRR_shard2_replica1/data [CachedDir<<refCount=0;path=/home/ryahiaoui/Bureau/solr-5.3.1/data/node_01/portailRR_shard2_replica1/data;done=false>>]
+2016-02-04 12:18:30.374 INFO  (qtp428746855-22) [c:portailRR s:shard2 r:core_node1 x:portailRR_shard2_replica1] o.a.s.c.CachingDirectoryFactory Closing directory: /home/ryahiaoui/Bureau/solr-5.3.1/data/node_01/portailRR_shard2_replica1/data
+2016-02-04 12:18:30.374 INFO  (qtp428746855-22) [c:portailRR s:shard2 r:core_node1 x:portailRR_shard2_replica1] o.a.s.c.CachingDirectoryFactory looking to close /home/ryahiaoui/Bureau/solr-5.3.1/data/node_01/portailRR_shard2_replica1/data/index [CachedDir<<refCount=0;path=/home/ryahiaoui/Bureau/solr-5.3.1/data/node_01/portailRR_shard2_replica1/data/index;done=false>>]
+2016-02-04 12:18:30.374 INFO  (qtp428746855-22) [c:portailRR s:shard2 r:core_node1 x:portailRR_shard2_replica1] o.a.s.c.CachingDirectoryFactory Closing directory: /home/ryahiaoui/Bureau/solr-5.3.1/data/node_01/portailRR_shard2_replica1/data/index
+2016-02-04 12:18:30.374 ERROR (qtp428746855-22) [c:portailRR s:shard2 r:core_node1 x:portailRR_shard2_replica1] o.a.s.c.CoreContainer Error creating core [portailRR_shard2_replica1]: Error loading class 'org.gazzax.labs.solrdf.response.HybridResponseWriter'
+org.apache.solr.common.SolrException: Error loading class 'org.gazzax.labs.solrdf.response.HybridResponseWriter'
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:820)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:659)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:723)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:697)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleCreateAction(CoreAdminHandler.java:629)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestInternal(CoreAdminHandler.java:214)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:194)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:143)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:675)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:443)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:214)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:179)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error loading class 'org.gazzax.labs.solrdf.response.HybridResponseWriter'
+	at org.apache.solr.core.SolrResourceLoader.findClass(SolrResourceLoader.java:491)
+	at org.apache.solr.core.SolrResourceLoader.findClass(SolrResourceLoader.java:422)
+	at org.apache.solr.core.SolrCore.createInstance(SolrCore.java:567)
+	at org.apache.solr.core.PluginBag.createPlugin(PluginBag.java:122)
+	at org.apache.solr.core.PluginBag.init(PluginBag.java:217)
+	at org.apache.solr.core.PluginBag.init(PluginBag.java:206)
+	at org.apache.solr.core.SolrCore.initWriters(SolrCore.java:2205)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:763)
+	... 31 more
+Caused by: java.lang.ClassNotFoundException: org.gazzax.labs.solrdf.response.HybridResponseWriter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:814)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.solr.core.SolrResourceLoader.findClass(SolrResourceLoader.java:475)
+	... 38 more
+2016-02-04 12:18:30.421 ERROR (qtp428746855-22) [c:portailRR s:shard2 r:core_node1 x:portailRR_shard2_replica1] o.a.s.c.SolrCore org.apache.solr.common.SolrException: Error CREATEing SolrCore 'portailRR_shard2_replica1': Unable to create core [portailRR_shard2_replica1] Caused by: org.gazzax.labs.solrdf.response.HybridResponseWriter
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleCreateAction(CoreAdminHandler.java:662)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestInternal(CoreAdminHandler.java:214)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:194)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:143)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:675)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:443)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:214)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:179)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [portailRR_shard2_replica1]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:737)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:697)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleCreateAction(CoreAdminHandler.java:629)
+	... 27 more
+Caused by: org.apache.solr.common.SolrException: Error loading class 'org.gazzax.labs.solrdf.response.HybridResponseWriter'
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:820)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:659)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:723)
+	... 29 more
+Caused by: org.apache.solr.common.SolrException: Error loading class 'org.gazzax.labs.solrdf.response.HybridResponseWriter'
+	at org.apache.solr.core.SolrResourceLoader.findClass(SolrResourceLoader.java:491)
+	at org.apache.solr.core.SolrResourceLoader.findClass(SolrResourceLoader.java:422)
+	at org.apache.solr.core.SolrCore.createInstance(SolrCore.java:567)
+	at org.apache.solr.core.PluginBag.createPlugin(PluginBag.java:122)
+	at org.apache.solr.core.PluginBag.init(PluginBag.java:217)
+	at org.apache.solr.core.PluginBag.init(PluginBag.java:206)
+	at org.apache.solr.core.SolrCore.initWriters(SolrCore.java:2205)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:763)
+	... 31 more
+Caused by: java.lang.ClassNotFoundException: org.gazzax.labs.solrdf.response.HybridResponseWriter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:814)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.solr.core.SolrResourceLoader.findClass(SolrResourceLoader.java:475)
+	... 38 more
+
+2016-02-04 12:18:30.421 INFO  (qtp428746855-22) [c:portailRR s:shard2 r:core_node1 x:portailRR_shard2_replica1] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={qt=/admin/cores&collection.configName=portail2&name=portailRR_shard2_replica1&action=CREATE&numShards=2&collection=portailRR&shard=shard2&wt=javabin&version=2} status=400 QTime=1466 
+2016-02-04 12:18:30.486 INFO  (zkCallback-3-thread-2-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ZkStateReader A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/portailRR/state.json for collection portailRR has occurred - updating... (live nodes size: 2)
+2016-02-04 12:18:30.487 INFO  (zkCallback-3-thread-2-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ZkStateReader Unwatched collection portailRR
+2016-02-04 12:18:30.528 INFO  (zkCallback-3-thread-2-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.DistributedQueue NodeDataChanged fired on path /overseer/collection-queue-work/qnr-0000000000 state SyncConnected
+2016-02-04 12:18:30.554 INFO  (qtp428746855-40) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/collections params={replicationFactor=1&maxShardsPerNode=1&collection.configName=portail2&name=portailRR&action=CREATE&numShards=2&wt=json} status=0 QTime=1820 
+2016-02-04 12:18:30.620 INFO  (zkCallback-3-thread-2-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ZkStateReader A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+2016-02-04 12:18:30.637 INFO  (zkCallback-3-thread-2-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ZkStateReader Updated cluster state version to 17
+2016-02-04 12:19:08.560 ERROR (qtp428746855-13) [   ] o.a.s.s.SolrDispatchFilter null:org.apache.solr.common.SolrException: SolrCore '' is not available due to init failure: Could not get shard id for core: 
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:974)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:287)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:417)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:214)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:179)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Could not get shard id for core: 
+	at org.apache.solr.cloud.ZkController.waitForShardId(ZkController.java:1495)
+	at org.apache.solr.cloud.ZkController.doGetShardIdAndNodeNameProcess(ZkController.java:1441)
+	at org.apache.solr.cloud.ZkController.preRegister(ZkController.java:1542)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:718)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:443)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:434)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor$1.run(ExecutorUtil.java:210)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 more
+
+2016-02-04 12:19:09.834 ERROR (qtp428746855-40) [   ] o.a.s.s.SolrDispatchFilter null:org.apache.solr.common.SolrException: SolrCore '' is not available due to init failure: Could not get shard id for core: 
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:974)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:287)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:417)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:214)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:179)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Could not get shard id for core: 
+	at org.apache.solr.cloud.ZkController.waitForShardId(ZkController.java:1495)
+	at org.apache.solr.cloud.ZkController.doGetShardIdAndNodeNameProcess(ZkController.java:1441)
+	at org.apache.solr.cloud.ZkController.preRegister(ZkController.java:1542)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:718)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:443)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:434)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor$1.run(ExecutorUtil.java:210)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 more
+
+2016-02-04 12:19:11.669 ERROR (qtp428746855-13) [   ] o.a.s.s.SolrDispatchFilter null:org.apache.solr.common.SolrException: SolrCore '' is not available due to init failure: Could not get shard id for core: 
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:974)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:287)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:417)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:214)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:179)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Could not get shard id for core: 
+	at org.apache.solr.cloud.ZkController.waitForShardId(ZkController.java:1495)
+	at org.apache.solr.cloud.ZkController.doGetShardIdAndNodeNameProcess(ZkController.java:1441)
+	at org.apache.solr.cloud.ZkController.preRegister(ZkController.java:1542)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:718)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:443)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:434)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor$1.run(ExecutorUtil.java:210)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 more
+
+2016-02-04 12:21:41.725 INFO  (zkCallback-3-thread-5-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@7563d3d6 name:ZooKeeperConnection Watcher:localhost:2181 got event WatchedEvent state:Disconnected type:None path:null path:null type:None
+2016-02-04 12:21:41.725 INFO  (zkCallback-3-thread-5-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ConnectionManager zkClient has disconnected
+2016-02-04 12:21:41.825 INFO  (ShutdownMonitor) [   ] o.e.j.s.ServerConnector Stopped ServerConnector@7dfd3c81{HTTP/1.1}{0.0.0.0:6981}
+2016-02-04 12:21:41.825 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1525409936
+2016-02-04 12:21:42.799 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@271053e1{/solr,file:/home/ryahiaoui/Bureau/solr-5.3.1/server/solr-webapp/webapp/,UNAVAILABLE}{/home/ryahiaoui/Bureau/solr-5.3.1/server/solr-webapp/webapp}

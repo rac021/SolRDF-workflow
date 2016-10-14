@@ -1,0 +1,673 @@
+2016-02-10 14:23:34.760 INFO  (main) [   ] o.e.j.u.log Logging initialized @214ms
+2016-02-10 14:23:34.904 INFO  (main) [   ] o.e.j.s.Server jetty-9.2.11.v20150529
+2016-02-10 14:23:34.916 WARN  (main) [   ] o.e.j.s.h.RequestLogHandler !RequestLog
+2016-02-10 14:23:34.917 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/lib/solr-5.3.1/server/contexts/] at interval 0
+2016-02-10 14:23:35.229 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2016-02-10 14:23:35.237 WARN  (main) [   ] o.e.j.s.SecurityHandler ServletContext@o.e.j.w.WebAppContext@271053e1{/solr,file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/lib/solr-5.3.1/server/solr-webapp/webapp/,STARTING}{/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/lib/solr-5.3.1/server/solr-webapp/webapp} has uncovered http methods for path: /
+2016-02-10 14:23:35.243 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init(): WebAppClassLoader=1164371389@4566e5bd
+2016-02-10 14:23:35.253 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-02-10 14:23:35.253 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store
+2016-02-10 14:23:35.255 INFO  (main) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/'
+2016-02-10 14:23:35.360 INFO  (main) [   ] o.a.s.c.c.SolrZkClient Using default ZkCredentialsProvider
+2016-02-10 14:23:35.376 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+2016-02-10 14:23:35.461 INFO  (zkCallback-1-thread-1) [   ] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@7c808997 name:ZooKeeperConnection Watcher:localhost:2181 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-02-10 14:23:35.461 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2016-02-10 14:23:35.461 INFO  (main) [   ] o.a.s.c.c.SolrZkClient Using default ZkACLProvider
+2016-02-10 14:23:35.473 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Loading solr.xml from SolrHome (not found in ZooKeeper)
+2016-02-10 14:23:35.474 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/solr.xml
+2016-02-10 14:23:35.527 INFO  (main) [   ] o.a.s.c.CoresLocator Config-defined core root directory: /home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store
+2016-02-10 14:23:35.543 INFO  (main) [   ] o.a.s.c.CoreContainer New CoreContainer 1525409936
+2016-02-10 14:23:35.543 INFO  (main) [   ] o.a.s.c.CoreContainer Loading cores into CoreContainer [instanceDir=/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/]
+2016-02-10 14:23:35.543 INFO  (main) [   ] o.a.s.c.CoreContainer loading shared library: /home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/lib
+2016-02-10 14:23:35.543 WARN  (main) [   ] o.a.s.c.SolrResourceLoader Can't find (or read) directory to add to classloader: lib (resolved as: /home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/lib).
+2016-02-10 14:23:35.556 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory created with socketTimeout : 0,connTimeout : 0,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,
+2016-02-10 14:23:35.692 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2016-02-10 14:23:35.694 INFO  (main) [   ] o.a.s.l.LogWatcher SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+2016-02-10 14:23:35.695 INFO  (main) [   ] o.a.s.l.LogWatcher Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+2016-02-10 14:23:35.695 INFO  (main) [   ] o.a.s.c.ZkContainer Zookeeper client=localhost:2181
+2016-02-10 14:23:35.704 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+2016-02-10 14:23:35.727 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@1de71bee name:ZooKeeperConnection Watcher:localhost:2181 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-02-10 14:23:35.727 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2016-02-10 14:23:35.741 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /overseer/queue
+2016-02-10 14:23:35.758 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /overseer/collection-queue-work
+2016-02-10 14:23:35.773 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /overseer/collection-map-running
+2016-02-10 14:23:35.790 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /overseer/collection-map-completed
+2016-02-10 14:23:35.806 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /overseer/collection-map-failure
+2016-02-10 14:23:35.820 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /live_nodes
+2016-02-10 14:23:35.832 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /collections
+2016-02-10 14:23:35.841 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /aliases.json
+2016-02-10 14:23:35.848 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /clusterstate.json
+2016-02-10 14:23:35.858 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /security.json
+2016-02-10 14:23:35.865 INFO  (main) [   ] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/127.0.1.1:6981_solr
+2016-02-10 14:23:35.873 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /live_nodes/127.0.1.1:6981_solr
+2016-02-10 14:23:35.885 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /overseer_elect
+2016-02-10 14:23:35.891 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /overseer_elect/election
+2016-02-10 14:23:35.898 INFO  (main) [   ] o.a.s.c.Overseer Overseer (id=null) closing
+2016-02-10 14:23:35.906 INFO  (main) [   ] o.a.s.c.LeaderElector Joined leadership election with path: /overseer_elect/election/95362365056155651-127.0.1.1:6981_solr-n_0000000000
+2016-02-10 14:23:35.914 INFO  (main) [   ] o.a.s.c.OverseerElectionContext I am going to be the leader 127.0.1.1:6981_solr
+2016-02-10 14:23:35.920 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /overseer_elect/leader
+2016-02-10 14:23:35.932 INFO  (main) [   ] o.a.s.c.Overseer Overseer (id=95362365056155651-127.0.1.1:6981_solr-n_0000000000) starting
+2016-02-10 14:23:36.024 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /overseer/queue-work
+2016-02-10 14:23:36.158 INFO  (main) [   ] o.a.s.c.OverseerAutoReplicaFailoverThread Starting OverseerAutoReplicaFailoverThread autoReplicaFailoverWorkLoopDelay=10000 autoReplicaFailoverWaitAfterExpiration=30000 autoReplicaFailoverBadNodeExpiration=60000
+2016-02-10 14:23:36.177 INFO  (main) [   ] o.a.s.c.c.ZkStateReader Updating cluster state from ZooKeeper... 
+2016-02-10 14:23:36.177 INFO  (OverseerCollectionProcessor-95362365056155651-127.0.1.1:6981_solr-n_0000000000) [   ] o.a.s.c.OverseerCollectionProcessor Process current queue of collection creations
+2016-02-10 14:23:36.190 INFO  (OverseerStateUpdate-95362365056155651-127.0.1.1:6981_solr-n_0000000000) [   ] o.a.s.c.Overseer Starting to work on the main queue
+2016-02-10 14:23:36.248 INFO  (main) [   ] o.a.s.c.CoreContainer Security conf doesn't exist. Skipping setup for authorization module.
+2016-02-10 14:23:36.248 INFO  (main) [   ] o.a.s.c.CoreContainer No authentication plugin used.
+2016-02-10 14:23:36.266 INFO  (main) [   ] o.a.s.c.CoresLocator Looking for core definitions underneath /home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store
+2016-02-10 14:23:36.281 INFO  (main) [   ] o.a.s.c.SolrCore Created CoreDescriptor: {name=store, config=solrconfig.xml, transient=false, schema=schema.xml, loadOnStartup=true, configSetProperties=configsetprops.json, instanceDir=/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store, absoluteInstDir=/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/, dataDir=data/, shard=shard1}
+2016-02-10 14:23:36.281 INFO  (main) [   ] o.a.s.c.CoresLocator Found core store in /home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/
+2016-02-10 14:23:36.281 INFO  (main) [   ] o.a.s.c.CoresLocator Found 1 core definitions
+2016-02-10 14:23:36.283 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter user.dir=/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/lib/solr-5.3.1/server
+2016-02-10 14:23:36.283 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.ZkController publishing state=down
+2016-02-10 14:23:36.283 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init() done
+2016-02-10 14:23:36.284 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.ZkController numShards not found on descriptor - reading it from system property
+2016-02-10 14:23:36.291 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.ZkController look for our core node name
+2016-02-10 14:23:36.291 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.DistributedQueue NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+2016-02-10 14:23:36.293 INFO  (OverseerStateUpdate-95362365056155651-127.0.1.1:6981_solr-n_0000000000) [   ] o.a.s.c.Overseer processMessage: queueSize: 1, message = {
+  "core":"store",
+  "roles":null,
+  "base_url":"http://127.0.1.1:6981/solr",
+  "node_name":"127.0.1.1:6981_solr",
+  "numShards":"1",
+  "state":"down",
+  "shard":"shard1",
+  "collection":"store",
+  "operation":"state"} current state version: 0
+2016-02-10 14:23:36.295 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@271053e1{/solr,file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/lib/solr-5.3.1/server/solr-webapp/webapp/,AVAILABLE}{/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/lib/solr-5.3.1/server/solr-webapp/webapp}
+2016-02-10 14:23:36.299 INFO  (OverseerStateUpdate-95362365056155651-127.0.1.1:6981_solr-n_0000000000) [   ] o.a.s.c.o.ReplicaMutator Update state numShards=1 message={
+  "core":"store",
+  "roles":null,
+  "base_url":"http://127.0.1.1:6981/solr",
+  "node_name":"127.0.1.1:6981_solr",
+  "numShards":"1",
+  "state":"down",
+  "shard":"shard1",
+  "collection":"store",
+  "operation":"state"}
+2016-02-10 14:23:36.300 INFO  (OverseerStateUpdate-95362365056155651-127.0.1.1:6981_solr-n_0000000000) [   ] o.a.s.c.o.ClusterStateMutator building a new cName: store
+2016-02-10 14:23:36.301 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@5c86dbc5{HTTP/1.1}{0.0.0.0:6981}
+2016-02-10 14:23:36.301 INFO  (main) [   ] o.e.j.s.Server Started @1756ms
+2016-02-10 14:23:36.345 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ZkStateReader A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 1)
+2016-02-10 14:23:36.347 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ZkStateReader Updated cluster state version to 1
+2016-02-10 14:23:37.292 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.ZkController waiting to find shard id in clusterstate for store
+2016-02-10 14:23:37.292 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.ZkController Check for collection zkNode:store
+2016-02-10 14:23:37.293 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.ZkController Creating collection in ZooKeeper:store
+2016-02-10 14:23:37.293 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.ZkController Looking for collection configName
+2016-02-10 14:23:37.294 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.ZkController Could not find explicit collection configName, but found config name matching collection name - using that set.
+2016-02-10 14:23:37.294 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.c.SolrZkClient makePath: /collections/store
+2016-02-10 14:23:37.343 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.c.ZkStateReader Load collection config from:/collections/store
+2016-02-10 14:23:37.344 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.c.ZkStateReader path=/collections/store configName=store specified config exists in ZooKeeper
+2016-02-10 14:23:37.345 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/'
+2016-02-10 14:23:37.346 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/solrdf-client-1.1.jar' to classloader
+2016-02-10 14:23:37.346 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/joda-time-2.2.jar' to classloader
+2016-02-10 14:23:37.346 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/solrdf-core-1.1.jar' to classloader
+2016-02-10 14:23:37.346 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/xercesImpl-2.11.0.jar' to classloader
+2016-02-10 14:23:37.346 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/junit4-ant-2.1.13.jar' to classloader
+2016-02-10 14:23:37.346 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/jena-arq-2.13.0.jar' to classloader
+2016-02-10 14:23:37.346 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/jcl-over-slf4j-1.7.6.jar' to classloader
+2016-02-10 14:23:37.346 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/commons-csv-1.0.jar' to classloader
+2016-02-10 14:23:37.347 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/xml-apis-1.4.01.jar' to classloader
+2016-02-10 14:23:37.347 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/solrdf-integration-tests-1.1.jar' to classloader
+2016-02-10 14:23:37.347 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/commons-lang3-3.3.2.jar' to classloader
+2016-02-10 14:23:37.347 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/jena-iri-1.1.2.jar' to classloader
+2016-02-10 14:23:37.347 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/httpclient-cache-4.2.6.jar' to classloader
+2016-02-10 14:23:37.347 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/commons-io-2.4.jar' to classloader
+2016-02-10 14:23:37.347 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/asm-commons-4.1.jar' to classloader
+2016-02-10 14:23:37.347 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/commons-lang-2.6.jar' to classloader
+2016-02-10 14:23:37.347 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/dom4j-1.6.1.jar' to classloader
+2016-02-10 14:23:37.348 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/zookeeper-3.4.6.jar' to classloader
+2016-02-10 14:23:37.348 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/log4j-1.2.17.jar' to classloader
+2016-02-10 14:23:37.348 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/org.restlet-2.3.0.jar' to classloader
+2016-02-10 14:23:37.348 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/t-digest-3.1.jar' to classloader
+2016-02-10 14:23:37.348 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/jackson-dataformat-smile-2.5.4.jar' to classloader
+2016-02-10 14:23:37.348 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/stax2-api-3.1.4.jar' to classloader
+2016-02-10 14:23:37.348 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/slf4j-log4j12-1.6.6.jar' to classloader
+2016-02-10 14:23:37.348 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/slf4j-api-1.6.6.jar' to classloader
+2016-02-10 14:23:37.348 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/spatial4j-0.4.1.jar' to classloader
+2016-02-10 14:23:37.348 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/jsonld-java-0.5.1.jar' to classloader
+2016-02-10 14:23:37.348 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/httpclient-4.4.1.jar' to classloader
+2016-02-10 14:23:37.349 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/guava-14.0.1.jar' to classloader
+2016-02-10 14:23:37.349 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/htrace-core-3.0.4.jar' to classloader
+2016-02-10 14:23:37.349 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/randomizedtesting-runner-2.1.13.jar' to classloader
+2016-02-10 14:23:37.349 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/jena-core-2.13.0.jar' to classloader
+2016-02-10 14:23:37.349 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/commons-fileupload-1.2.1.jar' to classloader
+2016-02-10 14:23:37.349 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/httpcore-4.4.1.jar' to classloader
+2016-02-10 14:23:37.349 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/hppc-0.5.2.jar' to classloader
+2016-02-10 14:23:37.349 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/concurrentlinkedhashmap-lru-1.2.jar' to classloader
+2016-02-10 14:23:37.349 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/protobuf-java-2.5.0.jar' to classloader
+2016-02-10 14:23:37.349 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/ant-1.8.2.jar' to classloader
+2016-02-10 14:23:37.349 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/commons-cli-1.2.jar' to classloader
+2016-02-10 14:23:37.349 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/commons-exec-1.3.jar' to classloader
+2016-02-10 14:23:37.349 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/jackson-core-2.5.4.jar' to classloader
+2016-02-10 14:23:37.350 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/libthrift-0.9.2.jar' to classloader
+2016-02-10 14:23:37.350 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/org.restlet.ext.servlet-2.3.0.jar' to classloader
+2016-02-10 14:23:37.350 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/commons-configuration-1.6.jar' to classloader
+2016-02-10 14:23:37.350 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/noggit-0.6.jar' to classloader
+2016-02-10 14:23:37.350 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/jackson-annotations-2.3.0.jar' to classloader
+2016-02-10 14:23:37.350 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/woodstox-core-asl-4.4.1.jar' to classloader
+2016-02-10 14:23:37.350 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/asm-4.1.jar' to classloader
+2016-02-10 14:23:37.350 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/commons-codec-1.10.jar' to classloader
+2016-02-10 14:23:37.350 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/commons-logging-1.2.jar' to classloader
+2016-02-10 14:23:37.350 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/httpmime-4.4.1.jar' to classloader
+2016-02-10 14:23:37.350 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/antlr-runtime-3.5.jar' to classloader
+2016-02-10 14:23:37.351 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/commons-collections-3.2.1.jar' to classloader
+2016-02-10 14:23:37.351 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/lib/jackson-databind-2.3.3.jar' to classloader
+2016-02-10 14:23:37.370 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.Config loaded config solrconfig.xml with version 0 
+2016-02-10 14:23:37.390 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrConfig current version of requestparams : -1
+2016-02-10 14:23:37.408 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.2.1
+2016-02-10 14:23:37.460 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.Config Loaded SolrConfig: solrconfig.xml
+2016-02-10 14:23:37.469 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.s.IndexSchema Reading Solr Schema from /configs/store/schema.xml
+2016-02-10 14:23:37.475 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.s.IndexSchema [store] Schema name=SolRDF
+2016-02-10 14:23:37.505 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.s.IndexSchema unique key field: id
+2016-02-10 14:23:37.507 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/configs/store', cwd=/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/lib/solr-5.3.1/server
+2016-02-10 14:23:37.507 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1  x:store] o.a.s.c.CoreContainer Creating SolrCore 'store' using configuration from collection store
+2016-02-10 14:23:37.508 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2016-02-10 14:23:37.516 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.SolrCore [[store] ] Opening new SolrCore at [/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/index/store/store/], dataDir=[null]
+2016-02-10 14:23:37.516 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.SolrCore JMX monitoring not detected for core: store
+2016-02-10 14:23:37.526 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.CachingDirectoryFactory return new directory for /home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/data/cluster_01/node_01/store/data
+2016-02-10 14:23:37.526 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.SolrCore New index directory detected: old=null new=/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/data/cluster_01/node_01/store/data/index/
+2016-02-10 14:23:37.527 WARN  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.SolrCore [store] Solr index directory '/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/data/cluster_01/node_01/store/data/index' doesn't exist. Creating new index...
+2016-02-10 14:23:37.535 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.CachingDirectoryFactory return new directory for /home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/data/cluster_01/node_01/store/data/index
+2016-02-10 14:23:37.621 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.SolrCore SolrDeletionPolicy.onCommit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/data/cluster_01/node_01/store/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@66db1421; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+2016-02-10 14:23:37.622 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.SolrCore newest commit generation = 1
+2016-02-10 14:23:37.623 INFO  (OldIndexDirectoryCleanupThreadForCore-store) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.SolrCore Looking for old index directories to cleanup for core store in /home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/data/cluster_01/node_01/store/data/
+2016-02-10 14:23:37.747 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2016-02-10 14:23:37.769 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-02-10 14:23:37.770 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-02-10 14:23:37.771 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-02-10 14:23:37.772 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-02-10 14:23:37.773 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.PluginBag requestHandler : '/replication' created with startup=lazy 
+2016-02-10 14:23:37.782 WARN  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.PluginBag Multiple defaults for : requestHandler
+2016-02-10 14:23:37.786 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2016-02-10 14:23:37.786 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2016-02-10 14:23:37.788 WARN  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.admin.AdminHandlers]. Please consult documentation how to replace it accordingly.
+2016-02-10 14:23:37.789 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,,/sparql,/update/json/docs,/admin/luke,/sparql-update,/update/bulk,/get,/admin/properties,/update/json,/admin/threads,/analysis/field,/analysis/document,/sparql-query,/update/csv,/solr-query,/rdf-graph-store,/admin/segments,/admin/system,/replication,/config,/schema,/admin/plugins,/admin/logging,/admin,/admin/ping,/update,/admin/file
+2016-02-10 14:23:37.789 WARN  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.RequestHandlers no default request handler is registered (either '/select' or 'standard')
+2016-02-10 14:23:37.790 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2016-02-10 14:23:37.796 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2016-02-10 14:23:37.797 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir=/tmp defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2016-02-10 14:23:37.802 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.SolrCore Hard AutoCommit: if uncommited for 15000ms; 
+2016-02-10 14:23:37.802 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.SolrCore Soft AutoCommit: if uncommited for 5000ms; 
+2016-02-10 14:23:37.806 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.SolrCore SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/data/cluster_01/node_01/store/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@66db1421; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+2016-02-10 14:23:37.807 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.SolrCore newest commit generation = 1
+2016-02-10 14:23:37.814 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.s.SolrIndexSearcher Opening Searcher@6d8975ad[store] main
+2016-02-10 14:23:37.818 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.c.ZkStateReader Load collection config from:/collections/store
+2016-02-10 14:23:37.819 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.c.ZkStateReader path=/collections/store configName=store specified config exists in ZooKeeper
+2016-02-10 14:23:37.819 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.r.ManagedResourceStorage Setting up ZooKeeper-based storage for the RestManager with znodeBase: /configs/store
+2016-02-10 14:23:37.820 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/store
+2016-02-10 14:23:37.820 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.r.RestManager Initializing RestManager with initArgs: {}
+2016-02-10 14:23:37.829 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using ZooKeeperStorageIO:path=/configs/store
+2016-02-10 14:23:37.830 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.r.ManagedResourceStorage No data found for znode /configs/store/_rest_managed.json
+2016-02-10 14:23:37.830 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/store
+2016-02-10 14:23:37.830 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2016-02-10 14:23:37.834 WARN  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.AdminHandlers <requestHandler name="/admin/" 
+ class="solr.admin.AdminHandlers" /> is deprecated . It is not required anymore
+2016-02-10 14:23:37.835 INFO  (searcherExecutor-8-thread-1-processing-n:127.0.1.1:6981_solr x:store s:shard1 c:store r:core_node1) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.SolrCore [store] Registered new searcher Searcher@6d8975ad[store] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-02-10 14:23:37.835 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2016-02-10 14:23:37.835 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2016-02-10 14:23:37.836 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.u.VersionInfo No terms found for _version_, cannot seed version bucket highest value from index
+2016-02-10 14:23:37.836 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1525797846081601536
+2016-02-10 14:23:37.839 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.u.UpdateLog Took 4 ms to seed version buckets with highest version 1525797846081601536
+2016-02-10 14:23:37.839 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.ZkController watch zkdir /configs/store
+2016-02-10 14:23:37.841 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.CoreContainer registering core: store
+2016-02-10 14:23:37.841 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6981_solr x:store s:shard1 c:store r:core_node1) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.ZkController Register replica - core:store address:http://127.0.1.1:6981/solr collection:store shard:shard1
+2016-02-10 14:23:37.845 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6981_solr x:store s:shard1 c:store r:core_node1) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.c.SolrZkClient makePath: /collections/store/leader_elect/shard1/election
+2016-02-10 14:23:37.881 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6981_solr x:store s:shard1 c:store r:core_node1) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.LeaderElector Joined leadership election with path: /collections/store/leader_elect/shard1/election/95362365056155651-core_node1-n_0000000000
+2016-02-10 14:23:37.889 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6981_solr x:store s:shard1 c:store r:core_node1) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.ShardLeaderElectionContext Running the leader process for shard shard1
+2016-02-10 14:23:37.906 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.DistributedQueue NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+2016-02-10 14:23:37.907 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6981_solr x:store s:shard1 c:store r:core_node1) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.ShardLeaderElectionContext Enough replicas found to continue.
+2016-02-10 14:23:37.907 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6981_solr x:store s:shard1 c:store r:core_node1) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.ShardLeaderElectionContext I may be the new leader - try and sync
+2016-02-10 14:23:37.907 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6981_solr x:store s:shard1 c:store r:core_node1) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.SyncStrategy Sync replicas to http://127.0.1.1:6981/solr/store/
+2016-02-10 14:23:37.907 INFO  (OverseerStateUpdate-95362365056155651-127.0.1.1:6981_solr-n_0000000000) [   ] o.a.s.c.Overseer processMessage: queueSize: 1, message = {
+  "operation":"leader",
+  "shard":"shard1",
+  "collection":"store"} current state version: 1
+2016-02-10 14:23:37.908 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6981_solr x:store s:shard1 c:store r:core_node1) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.SyncStrategy Sync Success - now sync replicas to me
+2016-02-10 14:23:37.908 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6981_solr x:store s:shard1 c:store r:core_node1) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.SyncStrategy http://127.0.1.1:6981/solr/store/ has no replicas
+2016-02-10 14:23:37.908 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6981_solr x:store s:shard1 c:store r:core_node1) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.ShardLeaderElectionContext I am the new leader: http://127.0.1.1:6981/solr/store/ shard1
+2016-02-10 14:23:37.909 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6981_solr x:store s:shard1 c:store r:core_node1) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.c.SolrZkClient makePath: /collections/store/leaders/shard1
+2016-02-10 14:23:37.923 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ZkStateReader A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 1)
+2016-02-10 14:23:37.948 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ZkStateReader Updated cluster state version to 2
+2016-02-10 14:23:37.973 INFO  (OverseerStateUpdate-95362365056155651-127.0.1.1:6981_solr-n_0000000000) [   ] o.a.s.c.Overseer processMessage: queueSize: 1, message = {
+  "operation":"leader",
+  "shard":"shard1",
+  "collection":"store",
+  "base_url":"http://127.0.1.1:6981/solr",
+  "core":"store",
+  "state":"active"} current state version: 2
+2016-02-10 14:23:37.990 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.DistributedQueue NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+2016-02-10 14:23:37.998 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ZkStateReader A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 1)
+2016-02-10 14:23:38.006 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ZkStateReader Updated cluster state version to 3
+2016-02-10 14:23:38.024 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6981_solr x:store s:shard1 c:store r:core_node1) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.ZkController We are http://127.0.1.1:6981/solr/store/ and leader is http://127.0.1.1:6981/solr/store/
+2016-02-10 14:23:38.024 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6981_solr x:store s:shard1 c:store r:core_node1) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.ZkController No LogReplay needed for core=store baseURL=http://127.0.1.1:6981/solr
+2016-02-10 14:23:38.024 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6981_solr x:store s:shard1 c:store r:core_node1) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.ZkController I am the leader, no recovery necessary
+2016-02-10 14:23:38.024 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6981_solr x:store s:shard1 c:store r:core_node1) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.ZkController publishing state=active
+2016-02-10 14:23:38.024 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6981_solr x:store s:shard1 c:store r:core_node1) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.ZkController numShards not found on descriptor - reading it from system property
+2016-02-10 14:23:38.055 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.DistributedQueue NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+2016-02-10 14:23:38.056 INFO  (OverseerStateUpdate-95362365056155651-127.0.1.1:6981_solr-n_0000000000) [   ] o.a.s.c.Overseer processMessage: queueSize: 1, message = {
+  "core":"store",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://127.0.1.1:6981/solr",
+  "node_name":"127.0.1.1:6981_solr",
+  "numShards":"1",
+  "state":"active",
+  "shard":"shard1",
+  "collection":"store",
+  "operation":"state"} current state version: 3
+2016-02-10 14:23:38.057 INFO  (OverseerStateUpdate-95362365056155651-127.0.1.1:6981_solr-n_0000000000) [   ] o.a.s.c.o.ReplicaMutator Update state numShards=1 message={
+  "core":"store",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://127.0.1.1:6981/solr",
+  "node_name":"127.0.1.1:6981_solr",
+  "numShards":"1",
+  "state":"active",
+  "shard":"shard1",
+  "collection":"store",
+  "operation":"state"}
+2016-02-10 14:23:38.190 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ZkStateReader A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 1)
+2016-02-10 14:23:38.198 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ZkStateReader Updated cluster state version to 4
+2016-02-10 14:23:42.223 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.DistributedQueue NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+2016-02-10 14:23:42.225 INFO  (OverseerStateUpdate-95362365056155651-127.0.1.1:6981_solr-n_0000000000) [   ] o.a.s.c.Overseer processMessage: queueSize: 1, message = {
+  "core":"portail",
+  "roles":null,
+  "base_url":"http://127.0.1.1:6985/solr",
+  "node_name":"127.0.1.1:6985_solr",
+  "numShards":"1",
+  "state":"down",
+  "shard":"shard1",
+  "collection":"portail",
+  "operation":"state"} current state version: 4
+2016-02-10 14:23:42.226 INFO  (OverseerStateUpdate-95362365056155651-127.0.1.1:6981_solr-n_0000000000) [   ] o.a.s.c.o.ReplicaMutator Update state numShards=1 message={
+  "core":"portail",
+  "roles":null,
+  "base_url":"http://127.0.1.1:6985/solr",
+  "node_name":"127.0.1.1:6985_solr",
+  "numShards":"1",
+  "state":"down",
+  "shard":"shard1",
+  "collection":"portail",
+  "operation":"state"}
+2016-02-10 14:23:42.226 INFO  (OverseerStateUpdate-95362365056155651-127.0.1.1:6981_solr-n_0000000000) [   ] o.a.s.c.o.ClusterStateMutator building a new cName: portail
+2016-02-10 14:23:42.240 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ZkStateReader A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+2016-02-10 14:23:42.248 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ZkStateReader Updated cluster state version to 5
+2016-02-10 14:23:43.849 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.DistributedQueue NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+2016-02-10 14:23:43.850 INFO  (OverseerStateUpdate-95362365056155651-127.0.1.1:6981_solr-n_0000000000) [   ] o.a.s.c.Overseer processMessage: queueSize: 1, message = {
+  "operation":"leader",
+  "shard":"shard1",
+  "collection":"portail"} current state version: 5
+2016-02-10 14:23:43.865 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ZkStateReader A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+2016-02-10 14:23:43.890 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ZkStateReader Updated cluster state version to 6
+2016-02-10 14:23:43.915 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.DistributedQueue NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+2016-02-10 14:23:43.916 INFO  (OverseerStateUpdate-95362365056155651-127.0.1.1:6981_solr-n_0000000000) [   ] o.a.s.c.Overseer processMessage: queueSize: 1, message = {
+  "operation":"leader",
+  "shard":"shard1",
+  "collection":"portail",
+  "base_url":"http://127.0.1.1:6985/solr",
+  "core":"portail",
+  "state":"active"} current state version: 6
+2016-02-10 14:23:44.040 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ZkStateReader A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+2016-02-10 14:23:44.068 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ZkStateReader Updated cluster state version to 7
+2016-02-10 14:23:44.132 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.DistributedQueue NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+2016-02-10 14:23:44.133 INFO  (OverseerStateUpdate-95362365056155651-127.0.1.1:6981_solr-n_0000000000) [   ] o.a.s.c.Overseer processMessage: queueSize: 1, message = {
+  "core":"portail",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://127.0.1.1:6985/solr",
+  "node_name":"127.0.1.1:6985_solr",
+  "numShards":"1",
+  "state":"active",
+  "shard":"shard1",
+  "collection":"portail",
+  "operation":"state"} current state version: 7
+2016-02-10 14:23:44.133 INFO  (OverseerStateUpdate-95362365056155651-127.0.1.1:6981_solr-n_0000000000) [   ] o.a.s.c.o.ReplicaMutator Update state numShards=1 message={
+  "core":"portail",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://127.0.1.1:6985/solr",
+  "node_name":"127.0.1.1:6985_solr",
+  "numShards":"1",
+  "state":"active",
+  "shard":"shard1",
+  "collection":"portail",
+  "operation":"state"}
+2016-02-10 14:23:44.257 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ZkStateReader A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+2016-02-10 14:23:44.265 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ZkStateReader Updated cluster state version to 8
+2016-02-10 14:23:46.434 ERROR (pool-1-thread-1) [c:store s:shard1 r:core_node1 x:store] o.a.j.riot [line: 21742, col: 1 ] Expected BNode or IRI: Got: [STRING2:Léman]
+2016-02-10 14:23:46.762 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.u.p.LogUpdateProcessor [store] webapp=/solr path=/update/bulk params={} {} 0 1721
+2016-02-10 14:23:49.420 INFO  (qtp428746855-20) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1455114229414} status=0 QTime=2 
+2016-02-10 14:23:49.460 INFO  (qtp428746855-19) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1455114229445} status=0 QTime=12 
+2016-02-10 14:23:49.483 ERROR (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-top.html
+2016-02-10 14:23:49.484 INFO  (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1455114229476} status=404 QTime=4 
+2016-02-10 14:23:49.484 ERROR (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-bottom.html
+2016-02-10 14:23:49.484 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1455114229477} status=404 QTime=4 
+2016-02-10 14:23:49.495 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1455114229489} status=0 QTime=0 
+2016-02-10 14:23:49.497 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /replication,class = solr.ReplicationHandler,} 
+2016-02-10 14:23:49.501 ERROR (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.html
+2016-02-10 14:23:49.501 INFO  (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/system params={wt=json&_=1455114229493} status=0 QTime=4 
+2016-02-10 14:23:49.502 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.html&_=1455114229495} status=404 QTime=3 
+2016-02-10 14:23:49.504 INFO  (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/ping params={action=status&wt=json&_=1455114229496} status=503 QTime=0 
+2016-02-10 14:23:49.505 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2016-02-10 14:23:49.508 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/replication params={wt=json&command=details&_=1455114229492} status=0 QTime=10 
+2016-02-10 14:23:50.357 INFO  (commitScheduler-11-thread-1) [c:store s:shard1 r:core_node1 x:store] o.a.s.u.UpdateHandler start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+2016-02-10 14:23:50.768 INFO  (qtp428746855-20) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1455114230761} status=0 QTime=0 
+2016-02-10 14:23:50.802 INFO  (qtp428746855-16) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1455114230792} status=0 QTime=4 
+2016-02-10 14:23:50.829 ERROR (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-top.html
+2016-02-10 14:23:50.829 INFO  (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1455114230824} status=404 QTime=1 
+2016-02-10 14:23:50.831 ERROR (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-bottom.html
+2016-02-10 14:23:50.832 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1455114230824} status=404 QTime=1 
+2016-02-10 14:23:50.852 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1455114230843} status=0 QTime=0 
+2016-02-10 14:23:50.854 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/replication params={wt=json&command=details&_=1455114230848} status=0 QTime=0 
+2016-02-10 14:23:50.859 ERROR (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.html
+2016-02-10 14:23:50.859 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.html&_=1455114230854} status=404 QTime=0 
+2016-02-10 14:23:50.870 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/ping params={action=status&wt=json&_=1455114230856} status=503 QTime=0 
+2016-02-10 14:23:50.874 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/system params={wt=json&_=1455114230850} status=0 QTime=19 
+2016-02-10 14:23:50.944 INFO  (commitScheduler-11-thread-1) [c:store s:shard1 r:core_node1 x:store] o.a.s.s.SolrIndexSearcher Opening Searcher@41f7e185[store] main
+2016-02-10 14:23:50.945 INFO  (commitScheduler-11-thread-1) [c:store s:shard1 r:core_node1 x:store] o.a.s.u.UpdateHandler end_commit_flush
+2016-02-10 14:23:50.945 INFO  (searcherExecutor-8-thread-1-processing-n:127.0.1.1:6981_solr x:store s:shard1 c:store r:core_node1) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.SolrCore [store] Registered new searcher Searcher@41f7e185[store] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(5.3.1):C21741)))}
+2016-02-10 14:23:51.551 INFO  (qtp428746855-17) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1455114231548} status=0 QTime=0 
+2016-02-10 14:23:51.626 INFO  (qtp428746855-18) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1455114231619} status=0 QTime=3 
+2016-02-10 14:23:51.643 ERROR (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-top.html
+2016-02-10 14:23:51.643 ERROR (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-bottom.html
+2016-02-10 14:23:51.644 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1455114231639} status=404 QTime=1 
+2016-02-10 14:23:51.644 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1455114231640} status=404 QTime=1 
+2016-02-10 14:23:51.655 INFO  (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1455114231650} status=0 QTime=0 
+2016-02-10 14:23:51.657 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/replication params={wt=json&command=details&_=1455114231653} status=0 QTime=1 
+2016-02-10 14:23:51.664 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/ping params={action=status&wt=json&_=1455114231657} status=503 QTime=0 
+2016-02-10 14:23:51.666 ERROR (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.html
+2016-02-10 14:23:51.666 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.html&_=1455114231655} status=404 QTime=1 
+2016-02-10 14:23:51.667 INFO  (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/system params={wt=json&_=1455114231654} status=0 QTime=10 
+2016-02-10 14:23:52.812 INFO  (qtp428746855-17) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1455114232808} status=0 QTime=0 
+2016-02-10 14:23:52.889 INFO  (qtp428746855-20) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1455114232884} status=0 QTime=3 
+2016-02-10 14:23:52.905 ERROR (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-top.html
+2016-02-10 14:23:52.905 ERROR (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-bottom.html
+2016-02-10 14:23:52.905 INFO  (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1455114232902} status=404 QTime=0 
+2016-02-10 14:23:52.905 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1455114232902} status=404 QTime=0 
+2016-02-10 14:23:52.915 INFO  (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1455114232909} status=0 QTime=0 
+2016-02-10 14:23:52.916 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/replication params={wt=json&command=details&_=1455114232913} status=0 QTime=0 
+2016-02-10 14:23:52.920 INFO  (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/system params={wt=json&_=1455114232914} status=0 QTime=3 
+2016-02-10 14:23:52.923 ERROR (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.html
+2016-02-10 14:23:52.924 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.html&_=1455114232916} status=404 QTime=0 
+2016-02-10 14:23:52.927 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/ping params={action=status&wt=json&_=1455114232918} status=503 QTime=0 
+2016-02-10 14:23:53.558 INFO  (qtp428746855-20) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1455114233556} status=0 QTime=0 
+2016-02-10 14:23:53.626 INFO  (qtp428746855-16) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1455114233620} status=0 QTime=2 
+2016-02-10 14:23:53.644 ERROR (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-top.html
+2016-02-10 14:23:53.645 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1455114233641} status=404 QTime=0 
+2016-02-10 14:23:53.645 ERROR (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-bottom.html
+2016-02-10 14:23:53.645 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1455114233642} status=404 QTime=0 
+2016-02-10 14:23:53.655 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1455114233650} status=0 QTime=0 
+2016-02-10 14:23:53.657 INFO  (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/replication params={wt=json&command=details&_=1455114233653} status=0 QTime=0 
+2016-02-10 14:23:53.666 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/ping params={action=status&wt=json&_=1455114233657} status=503 QTime=0 
+2016-02-10 14:23:53.666 ERROR (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.html
+2016-02-10 14:23:53.666 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.html&_=1455114233655} status=404 QTime=0 
+2016-02-10 14:23:53.670 INFO  (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/system params={wt=json&_=1455114233654} status=0 QTime=3 
+2016-02-10 14:23:54.399 INFO  (qtp428746855-16) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1455114234396} status=0 QTime=0 
+2016-02-10 14:23:54.471 INFO  (qtp428746855-18) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1455114234465} status=0 QTime=2 
+2016-02-10 14:23:54.492 ERROR (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-top.html
+2016-02-10 14:23:54.492 ERROR (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-bottom.html
+2016-02-10 14:23:54.492 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1455114234487} status=404 QTime=0 
+2016-02-10 14:23:54.492 INFO  (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1455114234488} status=404 QTime=0 
+2016-02-10 14:23:54.502 INFO  (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1455114234496} status=0 QTime=0 
+2016-02-10 14:23:54.505 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/replication params={wt=json&command=details&_=1455114234501} status=0 QTime=0 
+2016-02-10 14:23:54.509 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/system params={wt=json&_=1455114234502} status=0 QTime=3 
+2016-02-10 14:23:54.509 INFO  (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/ping params={action=status&wt=json&_=1455114234506} status=503 QTime=0 
+2016-02-10 14:23:54.511 ERROR (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.html
+2016-02-10 14:23:54.511 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.html&_=1455114234504} status=404 QTime=1 
+2016-02-10 14:23:56.887 INFO  (qtp428746855-18) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1455114236884} status=0 QTime=0 
+2016-02-10 14:23:56.954 INFO  (qtp428746855-17) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1455114236947} status=0 QTime=3 
+2016-02-10 14:23:56.969 ERROR (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-top.html
+2016-02-10 14:23:56.969 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1455114236965} status=404 QTime=1 
+2016-02-10 14:23:56.972 ERROR (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-bottom.html
+2016-02-10 14:23:56.972 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1455114236965} status=404 QTime=4 
+2016-02-10 14:23:56.982 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1455114236975} status=0 QTime=0 
+2016-02-10 14:23:56.988 INFO  (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/replication params={wt=json&command=details&_=1455114236980} status=0 QTime=0 
+2016-02-10 14:23:56.993 INFO  (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/system params={wt=json&_=1455114236982} status=0 QTime=5 
+2016-02-10 14:23:56.993 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/ping params={action=status&wt=json&_=1455114236985} status=503 QTime=0 
+2016-02-10 14:23:56.994 ERROR (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.html
+2016-02-10 14:23:56.994 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.html&_=1455114236983} status=404 QTime=0 
+2016-02-10 14:24:00.355 INFO  (commitScheduler-10-thread-1) [c:store s:shard1 r:core_node1 x:store] o.a.s.u.UpdateHandler start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-02-10 14:24:00.814 INFO  (commitScheduler-10-thread-1) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.SolrCore SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/data/cluster_01/node_01/store/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@66db1421; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/ryahiaoui/Bureau/workFlow/SolRdfWorkFlow/data/cluster_01/node_01/store/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@66db1421; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_2,generation=2}
+2016-02-10 14:24:00.814 INFO  (commitScheduler-10-thread-1) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.SolrCore newest commit generation = 2
+2016-02-10 14:24:00.815 INFO  (commitScheduler-10-thread-1) [c:store s:shard1 r:core_node1 x:store] o.a.s.s.SolrIndexSearcher Opening Searcher@237ae36e[store] realtime
+2016-02-10 14:24:00.815 INFO  (commitScheduler-10-thread-1) [c:store s:shard1 r:core_node1 x:store] o.a.s.u.UpdateHandler end_commit_flush
+2016-02-10 14:24:04.738 INFO  (qtp428746855-18) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1455114244736} status=0 QTime=0 
+2016-02-10 14:24:04.806 INFO  (qtp428746855-17) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1455114244800} status=0 QTime=3 
+2016-02-10 14:24:04.826 ERROR (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-top.html
+2016-02-10 14:24:04.826 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1455114244823} status=404 QTime=0 
+2016-02-10 14:24:04.828 ERROR (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-bottom.html
+2016-02-10 14:24:04.828 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1455114244823} status=404 QTime=1 
+2016-02-10 14:24:04.839 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1455114244833} status=0 QTime=0 
+2016-02-10 14:24:04.841 INFO  (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/replication params={wt=json&command=details&_=1455114244838} status=0 QTime=0 
+2016-02-10 14:24:04.845 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/ping params={action=status&wt=json&_=1455114244842} status=503 QTime=0 
+2016-02-10 14:24:04.845 ERROR (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.html
+2016-02-10 14:24:04.845 INFO  (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.html&_=1455114244840} status=404 QTime=0 
+2016-02-10 14:24:04.851 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/system params={wt=json&_=1455114244839} status=0 QTime=6 
+2016-02-10 14:24:17.821 INFO  (qtp428746855-16) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1455114257818} status=0 QTime=0 
+2016-02-10 14:24:17.850 INFO  (qtp428746855-19) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1455114257845} status=0 QTime=3 
+2016-02-10 14:24:17.882 ERROR (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-top.html
+2016-02-10 14:24:17.882 ERROR (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-bottom.html
+2016-02-10 14:24:17.882 INFO  (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1455114257874} status=404 QTime=0 
+2016-02-10 14:24:17.882 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1455114257875} status=404 QTime=0 
+2016-02-10 14:24:17.894 INFO  (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1455114257888} status=0 QTime=0 
+2016-02-10 14:24:17.896 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/replication params={wt=json&command=details&_=1455114257892} status=0 QTime=0 
+2016-02-10 14:24:17.901 ERROR (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.html
+2016-02-10 14:24:17.901 INFO  (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.html&_=1455114257897} status=404 QTime=1 
+2016-02-10 14:24:17.902 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/system params={wt=json&_=1455114257894} status=0 QTime=3 
+2016-02-10 14:24:17.903 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/ping params={action=status&wt=json&_=1455114257898} status=503 QTime=0 
+2016-02-10 14:24:54.891 INFO  (qtp428746855-18) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1455114294887} status=0 QTime=0 
+2016-02-10 14:24:54.914 INFO  (qtp428746855-16) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1455114294908} status=0 QTime=2 
+2016-02-10 14:24:54.941 ERROR (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-top.html
+2016-02-10 14:24:54.941 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1455114294937} status=404 QTime=0 
+2016-02-10 14:24:54.944 ERROR (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-bottom.html
+2016-02-10 14:24:54.944 INFO  (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1455114294937} status=404 QTime=0 
+2016-02-10 14:24:54.952 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1455114294947} status=0 QTime=0 
+2016-02-10 14:24:54.956 INFO  (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/replication params={wt=json&command=details&_=1455114294950} status=0 QTime=0 
+2016-02-10 14:24:54.958 INFO  (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/ping params={action=status&wt=json&_=1455114294953} status=503 QTime=0 
+2016-02-10 14:24:54.958 ERROR (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.html
+2016-02-10 14:24:54.958 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.html&_=1455114294952} status=404 QTime=0 
+2016-02-10 14:24:54.960 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/system params={wt=json&_=1455114294951} status=0 QTime=3 
+2016-02-10 14:24:55.780 INFO  (qtp428746855-16) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1455114295777} status=0 QTime=0 
+2016-02-10 14:24:55.855 INFO  (qtp428746855-17) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1455114295850} status=0 QTime=2 
+2016-02-10 14:24:55.871 ERROR (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-top.html
+2016-02-10 14:24:55.871 ERROR (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-bottom.html
+2016-02-10 14:24:55.871 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1455114295868} status=404 QTime=0 
+2016-02-10 14:24:55.872 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1455114295867} status=404 QTime=0 
+2016-02-10 14:24:55.884 INFO  (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1455114295879} status=0 QTime=0 
+2016-02-10 14:24:55.886 INFO  (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/replication params={wt=json&command=details&_=1455114295882} status=0 QTime=0 
+2016-02-10 14:24:55.891 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/system params={wt=json&_=1455114295883} status=0 QTime=3 
+2016-02-10 14:24:55.892 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/ping params={action=status&wt=json&_=1455114295886} status=503 QTime=0 
+2016-02-10 14:24:55.892 ERROR (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.html
+2016-02-10 14:24:55.893 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.html&_=1455114295884} status=404 QTime=0 
+2016-02-10 14:24:56.542 INFO  (qtp428746855-17) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1455114296539} status=0 QTime=0 
+2016-02-10 14:24:56.620 INFO  (qtp428746855-19) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1455114296611} status=0 QTime=6 
+2016-02-10 14:24:56.636 ERROR (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-top.html
+2016-02-10 14:24:56.636 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1455114296633} status=404 QTime=0 
+2016-02-10 14:24:56.637 ERROR (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-bottom.html
+2016-02-10 14:24:56.638 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1455114296634} status=404 QTime=0 
+2016-02-10 14:24:56.647 INFO  (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1455114296641} status=0 QTime=0 
+2016-02-10 14:24:56.650 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/replication params={wt=json&command=details&_=1455114296645} status=0 QTime=0 
+2016-02-10 14:24:56.653 ERROR (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.html
+2016-02-10 14:24:56.653 INFO  (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.html&_=1455114296647} status=404 QTime=0 
+2016-02-10 14:24:56.653 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/system params={wt=json&_=1455114296646} status=0 QTime=3 
+2016-02-10 14:24:56.654 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/ping params={action=status&wt=json&_=1455114296649} status=503 QTime=0 
+2016-02-10 14:24:57.263 INFO  (qtp428746855-19) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1455114297260} status=0 QTime=0 
+2016-02-10 14:24:57.339 INFO  (qtp428746855-20) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1455114297334} status=0 QTime=2 
+2016-02-10 14:24:57.354 ERROR (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-top.html
+2016-02-10 14:24:57.355 ERROR (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-bottom.html
+2016-02-10 14:24:57.355 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1455114297351} status=404 QTime=1 
+2016-02-10 14:24:57.355 INFO  (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1455114297351} status=404 QTime=0 
+2016-02-10 14:24:57.366 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1455114297360} status=0 QTime=0 
+2016-02-10 14:24:57.367 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/replication params={wt=json&command=details&_=1455114297364} status=0 QTime=0 
+2016-02-10 14:24:57.371 INFO  (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/system params={wt=json&_=1455114297365} status=0 QTime=3 
+2016-02-10 14:24:57.372 INFO  (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/ping params={action=status&wt=json&_=1455114297367} status=503 QTime=0 
+2016-02-10 14:24:57.372 ERROR (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.html
+2016-02-10 14:24:57.372 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.html&_=1455114297366} status=404 QTime=0 
+2016-02-10 14:24:58.522 INFO  (qtp428746855-20) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1455114298519} status=0 QTime=0 
+2016-02-10 14:24:58.596 INFO  (qtp428746855-16) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1455114298590} status=0 QTime=3 
+2016-02-10 14:24:58.612 ERROR (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-top.html
+2016-02-10 14:24:58.612 INFO  (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1455114298608} status=404 QTime=0 
+2016-02-10 14:24:58.613 ERROR (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-bottom.html
+2016-02-10 14:24:58.613 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1455114298609} status=404 QTime=1 
+2016-02-10 14:24:58.622 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1455114298616} status=0 QTime=0 
+2016-02-10 14:24:58.626 INFO  (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/replication params={wt=json&command=details&_=1455114298620} status=0 QTime=0 
+2016-02-10 14:24:58.626 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/ping params={action=status&wt=json&_=1455114298623} status=503 QTime=0 
+2016-02-10 14:24:58.627 ERROR (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.html
+2016-02-10 14:24:58.627 INFO  (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.html&_=1455114298622} status=404 QTime=0 
+2016-02-10 14:24:58.631 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/system params={wt=json&_=1455114298621} status=0 QTime=5 
+2016-02-10 14:24:59.689 INFO  (qtp428746855-20) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={wt=json&_=1455114299683} status=0 QTime=1 
+2016-02-10 14:24:59.710 INFO  (qtp428746855-16) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={wt=json&_=1455114299705} status=0 QTime=0 
+2016-02-10 14:25:03.782 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.u.UpdateHandler start commit{,optimize=true,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-02-10 14:25:03.783 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.u.UpdateHandler No uncommitted changes. Skipping IW.commit.
+2016-02-10 14:25:03.783 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.s.SolrIndexSearcher Opening Searcher@6d06c08a[store] main
+2016-02-10 14:25:03.784 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.u.UpdateHandler end_commit_flush
+2016-02-10 14:25:03.784 INFO  (searcherExecutor-8-thread-1-processing-n:127.0.1.1:6981_solr x:store s:shard1 c:store r:core_node1) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.SolrCore [store] Registered new searcher Searcher@6d06c08a[store] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(5.3.1):C21741)))}
+2016-02-10 14:25:03.785 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.u.p.LogUpdateProcessor [store] webapp=/solr path=/update params={waitFlush=true&optimize=true&wt=json&_=1455114303777} {optimize=} 0 3
+2016-02-10 14:25:06.311 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.u.UpdateHandler start commit{,optimize=true,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-02-10 14:25:06.311 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.u.UpdateHandler No uncommitted changes. Skipping IW.commit.
+2016-02-10 14:25:06.311 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.SolrCore SolrIndexSearcher has not changed - not re-opening: org.apache.solr.search.SolrIndexSearcher
+2016-02-10 14:25:06.311 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.u.UpdateHandler end_commit_flush
+2016-02-10 14:25:06.311 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.u.p.LogUpdateProcessor [store] webapp=/solr path=/update params={waitFlush=true&optimize=true&wt=json&_=1455114306305} {optimize=} 0 1
+2016-02-10 14:25:09.855 INFO  (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1455114309849} status=0 QTime=0 
+2016-02-10 14:25:09.857 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/replication params={wt=json&command=details&_=1455114309853} status=0 QTime=0 
+2016-02-10 14:25:09.863 ERROR (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.html
+2016-02-10 14:25:09.864 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.html&_=1455114309857} status=404 QTime=1 
+2016-02-10 14:25:09.864 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/ping params={action=status&wt=json&_=1455114309859} status=503 QTime=0 
+2016-02-10 14:25:09.865 INFO  (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/system params={wt=json&_=1455114309856} status=0 QTime=3 
+2016-02-10 14:25:11.696 INFO  (qtp428746855-19) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1455114311693} status=0 QTime=0 
+2016-02-10 14:25:11.775 INFO  (qtp428746855-18) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1455114311769} status=0 QTime=3 
+2016-02-10 14:25:11.794 ERROR (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-top.html
+2016-02-10 14:25:11.794 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1455114311791} status=404 QTime=0 
+2016-02-10 14:25:11.797 ERROR (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-bottom.html
+2016-02-10 14:25:11.797 INFO  (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1455114311793} status=404 QTime=0 
+2016-02-10 14:25:11.809 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1455114311802} status=0 QTime=0 
+2016-02-10 14:25:11.810 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/replication params={wt=json&command=details&_=1455114311807} status=0 QTime=0 
+2016-02-10 14:25:11.817 INFO  (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/ping params={action=status&wt=json&_=1455114311812} status=503 QTime=0 
+2016-02-10 14:25:11.817 ERROR (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.html
+2016-02-10 14:25:11.817 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.html&_=1455114311810} status=404 QTime=0 
+2016-02-10 14:25:11.820 INFO  (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/system params={wt=json&_=1455114311808} status=0 QTime=3 
+2016-02-10 14:25:12.419 INFO  (qtp428746855-18) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1455114312415} status=0 QTime=0 
+2016-02-10 14:25:12.505 INFO  (qtp428746855-17) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1455114312499} status=0 QTime=3 
+2016-02-10 14:25:12.524 ERROR (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-bottom.html
+2016-02-10 14:25:12.524 ERROR (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-top.html
+2016-02-10 14:25:12.525 INFO  (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1455114312522} status=404 QTime=0 
+2016-02-10 14:25:12.525 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1455114312521} status=404 QTime=0 
+2016-02-10 14:25:12.535 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1455114312529} status=0 QTime=0 
+2016-02-10 14:25:12.536 INFO  (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/replication params={wt=json&command=details&_=1455114312533} status=0 QTime=0 
+2016-02-10 14:25:12.541 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/ping params={action=status&wt=json&_=1455114312536} status=503 QTime=0 
+2016-02-10 14:25:12.542 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/system params={wt=json&_=1455114312534} status=0 QTime=4 
+2016-02-10 14:25:12.544 ERROR (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.html
+2016-02-10 14:25:12.545 INFO  (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.html&_=1455114312535} status=404 QTime=3 
+2016-02-10 14:25:16.998 INFO  (qtp428746855-17) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1455114316995} status=0 QTime=0 
+2016-02-10 14:25:17.017 INFO  (qtp428746855-20) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1455114317012} status=0 QTime=2 
+2016-02-10 14:25:17.033 ERROR (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-top.html
+2016-02-10 14:25:17.033 INFO  (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1455114317030} status=404 QTime=0 
+2016-02-10 14:25:17.034 ERROR (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-bottom.html
+2016-02-10 14:25:17.034 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1455114317030} status=404 QTime=0 
+2016-02-10 14:25:17.046 INFO  (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1455114317041} status=0 QTime=0 
+2016-02-10 14:25:17.047 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/replication params={wt=json&command=details&_=1455114317044} status=0 QTime=0 
+2016-02-10 14:25:17.052 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/ping params={action=status&wt=json&_=1455114317047} status=503 QTime=0 
+2016-02-10 14:25:17.053 ERROR (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.html
+2016-02-10 14:25:17.054 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.html&_=1455114317046} status=404 QTime=2 
+2016-02-10 14:25:17.057 INFO  (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/system params={wt=json&_=1455114317045} status=0 QTime=7 
+2016-02-10 14:25:18.076 INFO  (qtp428746855-20) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1455114318073} status=0 QTime=0 
+2016-02-10 14:25:18.140 INFO  (qtp428746855-18) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1455114318134} status=0 QTime=2 
+2016-02-10 14:25:18.154 ERROR (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-top.html
+2016-02-10 14:25:18.154 ERROR (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-bottom.html
+2016-02-10 14:25:18.154 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1455114318151} status=404 QTime=0 
+2016-02-10 14:25:18.154 INFO  (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1455114318152} status=404 QTime=0 
+2016-02-10 14:25:18.164 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1455114318158} status=0 QTime=0 
+2016-02-10 14:25:18.165 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/replication params={wt=json&command=details&_=1455114318162} status=0 QTime=0 
+2016-02-10 14:25:18.169 ERROR (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.html
+2016-02-10 14:25:18.169 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.html&_=1455114318164} status=404 QTime=1 
+2016-02-10 14:25:18.170 INFO  (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/ping params={action=status&wt=json&_=1455114318166} status=503 QTime=0 
+2016-02-10 14:25:18.172 INFO  (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/system params={wt=json&_=1455114318163} status=0 QTime=5 
+2016-02-10 14:25:20.047 INFO  (qtp428746855-20) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1455114320045} status=0 QTime=0 
+2016-02-10 14:25:20.119 INFO  (qtp428746855-19) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1455114320114} status=0 QTime=2 
+2016-02-10 14:25:20.135 ERROR (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-top.html
+2016-02-10 14:25:20.135 INFO  (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1455114320131} status=404 QTime=0 
+2016-02-10 14:25:20.136 ERROR (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.menu-bottom.html
+2016-02-10 14:25:20.136 INFO  (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1455114320132} status=404 QTime=2 
+2016-02-10 14:25:20.146 INFO  (qtp428746855-20) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1455114320140} status=0 QTime=0 
+2016-02-10 14:25:20.147 INFO  (qtp428746855-19) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/replication params={wt=json&command=details&_=1455114320144} status=0 QTime=0 
+2016-02-10 14:25:20.153 ERROR (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.h.a.ShowFileRequestHandler Can not find: /configs/store/admin-extra.html
+2016-02-10 14:25:20.153 INFO  (qtp428746855-16) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/file params={file=admin-extra.html&_=1455114320147} status=404 QTime=1 
+2016-02-10 14:25:20.153 INFO  (qtp428746855-18) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/system params={wt=json&_=1455114320145} status=0 QTime=4 
+2016-02-10 14:25:20.153 INFO  (qtp428746855-17) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.S.Request [store] webapp=/solr path=/admin/ping params={action=status&wt=json&_=1455114320149} status=503 QTime=0 
+2016-02-10 14:28:37.566 INFO  (zkCallback-3-thread-4-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@1de71bee name:ZooKeeperConnection Watcher:localhost:2181 got event WatchedEvent state:Disconnected type:None path:null path:null type:None
+2016-02-10 14:28:37.566 INFO  (zkCallback-3-thread-4-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ConnectionManager zkClient has disconnected
+2016-02-10 14:28:37.755 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152cb90d61d0003 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2016-02-10 14:28:39.281 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152cb90d61d0003 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2016-02-10 14:28:40.169 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152cb90d61d0003 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2016-02-10 14:28:41.957 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152cb90d61d0003 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2016-02-10 14:28:42.715 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152cb90d61d0003 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2016-02-10 14:28:44.116 INFO  (ShutdownMonitor) [   ] o.e.j.s.ServerConnector Stopped ServerConnector@5c86dbc5{HTTP/1.1}{0.0.0.0:6981}
+2016-02-10 14:28:44.116 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1525409936
+2016-02-10 14:28:44.116 INFO  (ShutdownMonitor) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.ZkController publishing state=down
+2016-02-10 14:28:44.116 INFO  (ShutdownMonitor) [c:store s:shard1 r:core_node1 x:store] o.a.s.c.ZkController numShards not found on descriptor - reading it from system property
+2016-02-10 14:28:44.468 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152cb90d61d0003 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2016-02-10 14:28:44.647 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152cb90d61d0003 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2016-02-10 14:28:46.561 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152cb90d61d0003 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2016-02-10 14:28:47.179 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152cb90d61d0003 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2016-02-10 14:28:48.866 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152cb90d61d0003 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2016-02-10 14:28:49.293 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152cb90d61d0003 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)

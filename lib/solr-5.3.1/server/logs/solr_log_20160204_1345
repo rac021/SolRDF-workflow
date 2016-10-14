@@ -1,0 +1,151 @@
+2016-02-04 12:45:23.191 INFO  (main) [   ] o.e.j.u.log Logging initialized @221ms
+2016-02-04 12:45:23.316 INFO  (main) [   ] o.e.j.s.Server jetty-9.2.11.v20150529
+2016-02-04 12:45:23.328 WARN  (main) [   ] o.e.j.s.h.RequestLogHandler !RequestLog
+2016-02-04 12:45:23.330 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:/home/ryahiaoui/Bureau/solr-5.3.1/server/contexts/] at interval 0
+2016-02-04 12:45:23.614 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2016-02-04 12:45:23.622 WARN  (main) [   ] o.e.j.s.SecurityHandler ServletContext@o.e.j.w.WebAppContext@271053e1{/solr,file:/home/ryahiaoui/Bureau/solr-5.3.1/server/solr-webapp/webapp/,STARTING}{/home/ryahiaoui/Bureau/solr-5.3.1/server/solr-webapp/webapp} has uncovered http methods for path: /
+2016-02-04 12:45:23.627 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init(): WebAppClassLoader=1164371389@4566e5bd
+2016-02-04 12:45:23.637 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-02-04 12:45:23.637 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdf
+2016-02-04 12:45:23.639 INFO  (main) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdf/'
+2016-02-04 12:45:23.741 INFO  (main) [   ] o.a.s.c.c.SolrZkClient Using default ZkCredentialsProvider
+2016-02-04 12:45:23.757 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+2016-02-04 12:45:23.849 INFO  (zkCallback-1-thread-1) [   ] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@14036544 name:ZooKeeperConnection Watcher:localhost:2181 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-02-04 12:45:23.849 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2016-02-04 12:45:23.849 INFO  (main) [   ] o.a.s.c.c.SolrZkClient Using default ZkACLProvider
+2016-02-04 12:45:23.861 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Loading solr.xml from SolrHome (not found in ZooKeeper)
+2016-02-04 12:45:23.863 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdf/solr.xml
+2016-02-04 12:45:23.912 INFO  (main) [   ] o.a.s.c.CoresLocator Config-defined core root directory: /home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdf
+2016-02-04 12:45:23.928 INFO  (main) [   ] o.a.s.c.CoreContainer New CoreContainer 1525409936
+2016-02-04 12:45:23.928 INFO  (main) [   ] o.a.s.c.CoreContainer Loading cores into CoreContainer [instanceDir=/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdf/]
+2016-02-04 12:45:23.928 INFO  (main) [   ] o.a.s.c.CoreContainer loading shared library: /home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdf/lib
+2016-02-04 12:45:23.928 WARN  (main) [   ] o.a.s.c.SolrResourceLoader Can't find (or read) directory to add to classloader: lib (resolved as: /home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdf/lib).
+2016-02-04 12:45:23.942 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory created with socketTimeout : 0,connTimeout : 0,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,
+2016-02-04 12:45:24.089 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2016-02-04 12:45:24.092 INFO  (main) [   ] o.a.s.l.LogWatcher SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+2016-02-04 12:45:24.093 INFO  (main) [   ] o.a.s.l.LogWatcher Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+2016-02-04 12:45:24.094 INFO  (main) [   ] o.a.s.c.ZkContainer Zookeeper client=localhost:2181
+2016-02-04 12:45:24.106 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+2016-02-04 12:45:24.123 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@45143d52 name:ZooKeeperConnection Watcher:localhost:2181 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-02-04 12:45:24.123 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2016-02-04 12:45:24.138 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /overseer/queue
+2016-02-04 12:45:24.155 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /overseer/collection-queue-work
+2016-02-04 12:45:24.170 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /overseer/collection-map-running
+2016-02-04 12:45:24.187 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /overseer/collection-map-completed
+2016-02-04 12:45:24.203 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /overseer/collection-map-failure
+2016-02-04 12:45:24.220 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /live_nodes
+2016-02-04 12:45:24.229 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /collections
+2016-02-04 12:45:24.237 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /aliases.json
+2016-02-04 12:45:24.245 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /clusterstate.json
+2016-02-04 12:45:24.254 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /security.json
+2016-02-04 12:45:24.262 INFO  (main) [   ] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/127.0.1.1:6981_solr
+2016-02-04 12:45:24.270 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /live_nodes/127.0.1.1:6981_solr
+2016-02-04 12:45:24.280 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /overseer_elect
+2016-02-04 12:45:24.287 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /overseer_elect/election
+2016-02-04 12:45:24.295 INFO  (main) [   ] o.a.s.c.Overseer Overseer (id=null) closing
+2016-02-04 12:45:24.303 INFO  (main) [   ] o.a.s.c.LeaderElector Joined leadership election with path: /overseer_elect/election/95328005078843395-127.0.1.1:6981_solr-n_0000000000
+2016-02-04 12:45:24.311 INFO  (main) [   ] o.a.s.c.OverseerElectionContext I am going to be the leader 127.0.1.1:6981_solr
+2016-02-04 12:45:24.315 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /overseer_elect/leader
+2016-02-04 12:45:24.320 INFO  (main) [   ] o.a.s.c.Overseer Overseer (id=95328005078843395-127.0.1.1:6981_solr-n_0000000000) starting
+2016-02-04 12:45:24.345 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /overseer/queue-work
+2016-02-04 12:45:24.422 INFO  (main) [   ] o.a.s.c.OverseerAutoReplicaFailoverThread Starting OverseerAutoReplicaFailoverThread autoReplicaFailoverWorkLoopDelay=10000 autoReplicaFailoverWaitAfterExpiration=30000 autoReplicaFailoverBadNodeExpiration=60000
+2016-02-04 12:45:24.440 INFO  (main) [   ] o.a.s.c.c.ZkStateReader Updating cluster state from ZooKeeper... 
+2016-02-04 12:45:24.440 INFO  (OverseerCollectionProcessor-95328005078843395-127.0.1.1:6981_solr-n_0000000000) [   ] o.a.s.c.OverseerCollectionProcessor Process current queue of collection creations
+2016-02-04 12:45:24.450 INFO  (OverseerStateUpdate-95328005078843395-127.0.1.1:6981_solr-n_0000000000) [   ] o.a.s.c.Overseer Starting to work on the main queue
+2016-02-04 12:45:24.493 INFO  (main) [   ] o.a.s.c.CoreContainer Security conf doesn't exist. Skipping setup for authorization module.
+2016-02-04 12:45:24.493 INFO  (main) [   ] o.a.s.c.CoreContainer No authentication plugin used.
+2016-02-04 12:45:24.510 INFO  (main) [   ] o.a.s.c.CoresLocator Looking for core definitions underneath /home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdf
+2016-02-04 12:45:24.524 INFO  (main) [   ] o.a.s.c.SolrCore Created CoreDescriptor: {name=, config=solrconfig.xml, transient=false, schema=schema.xml, loadOnStartup=true, configSetProperties=configsetprops.json, instanceDir=/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdf/store, absoluteInstDir=/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdf/store/, dataDir=data/, shard=}
+2016-02-04 12:45:24.524 INFO  (main) [   ] o.a.s.c.CoresLocator Found core  in /home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdf/store/
+2016-02-04 12:45:24.524 INFO  (main) [   ] o.a.s.c.CoresLocator Found 1 core definitions
+2016-02-04 12:45:24.526 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:   x:] o.a.s.c.ZkController publishing state=down
+2016-02-04 12:45:24.527 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:   x:] o.a.s.c.ZkController numShards not found on descriptor - reading it from system property
+2016-02-04 12:45:24.527 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter user.dir=/home/ryahiaoui/Bureau/solr-5.3.1/server
+2016-02-04 12:45:24.527 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init() done
+2016-02-04 12:45:24.536 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@271053e1{/solr,file:/home/ryahiaoui/Bureau/solr-5.3.1/server/solr-webapp/webapp/,AVAILABLE}{/home/ryahiaoui/Bureau/solr-5.3.1/server/solr-webapp/webapp}
+2016-02-04 12:45:24.538 INFO  (coreLoadExecutor-7-thread-1-processing-n:127.0.1.1:6981_solr) [c:   x:] o.a.s.c.ZkController look for our core node name
+2016-02-04 12:45:24.538 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.DistributedQueue NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+2016-02-04 12:45:24.540 INFO  (OverseerStateUpdate-95328005078843395-127.0.1.1:6981_solr-n_0000000000) [   ] o.a.s.c.Overseer processMessage: queueSize: 1, message = {
+  "core":"",
+  "roles":null,
+  "base_url":"http://127.0.1.1:6981/solr",
+  "node_name":"127.0.1.1:6981_solr",
+  "state":"down",
+  "shard":null,
+  "collection":"",
+  "operation":"state"} current state version: 0
+2016-02-04 12:45:24.541 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@5c86dbc5{HTTP/1.1}{0.0.0.0:6981}
+2016-02-04 12:45:24.541 INFO  (main) [   ] o.e.j.s.Server Started @1573ms
+2016-02-04 12:45:24.544 ERROR (OverseerStateUpdate-95328005078843395-127.0.1.1:6981_solr-n_0000000000) [   ] o.a.s.c.o.CollectionMutator Skipping invalid Overseer message because it has no collection specified: {
+  "core":"",
+  "roles":null,
+  "base_url":"http://127.0.1.1:6981/solr",
+  "node_name":"127.0.1.1:6981_solr",
+  "state":"down",
+  "shard":null,
+  "collection":"",
+  "operation":"state"}
+2016-02-04 12:45:30.770 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.DistributedQueue NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+2016-02-04 12:45:30.772 ERROR (OverseerStateUpdate-95328005078843395-127.0.1.1:6981_solr-n_0000000000) [   ] o.a.s.c.Overseer Exception in Overseer main queue loop
+java.lang.NullPointerException
+	at org.apache.solr.cloud.Overseer$ClusterStateUpdater.run(Overseer.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+2016-02-04 12:45:30.776 INFO  (OverseerStateUpdate-95328005078843395-127.0.1.1:6981_solr-n_0000000000) [   ] o.a.s.c.Overseer processMessage: queueSize: 1, message = {
+  "core":"",
+  "roles":null,
+  "base_url":"http://127.0.1.1:6982/solr",
+  "node_name":"127.0.1.1:6982_solr",
+  "state":"down",
+  "shard":null,
+  "collection":"",
+  "operation":"state"} current state version: 0
+2016-02-04 12:45:30.777 ERROR (OverseerStateUpdate-95328005078843395-127.0.1.1:6981_solr-n_0000000000) [   ] o.a.s.c.o.CollectionMutator Skipping invalid Overseer message because it has no collection specified: {
+  "core":"",
+  "roles":null,
+  "base_url":"http://127.0.1.1:6982/solr",
+  "node_name":"127.0.1.1:6982_solr",
+  "state":"down",
+  "shard":null,
+  "collection":"",
+  "operation":"state"}
+2016-02-04 12:45:30.787 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.DistributedQueue NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+2016-02-04 12:45:33.307 INFO  (qtp428746855-19) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1454589933293} status=0 QTime=8 
+2016-02-04 12:45:33.345 INFO  (qtp428746855-18) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1454589933329} status=0 QTime=12 
+2016-02-04 12:45:34.552 INFO  (qtp428746855-19) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1454589934549} status=0 QTime=0 
+2016-02-04 12:45:34.570 INFO  (qtp428746855-20) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1454589934565} status=0 QTime=2 
+2016-02-04 12:45:35.434 INFO  (qtp428746855-21) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1454589935431} status=0 QTime=0 
+2016-02-04 12:45:35.459 INFO  (qtp428746855-22) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1454589935453} status=0 QTime=2 
+2016-02-04 12:45:41.406 INFO  (qtp428746855-22) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={wt=json&_=1454589941402} status=0 QTime=0 
+2016-02-04 12:45:45.656 INFO  (qtp428746855-20) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/properties params={wt=json&_=1454589945652} status=0 QTime=0 
+2016-02-04 12:45:51.275 INFO  (qtp428746855-21) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={wt=json&_=1454589951271} status=0 QTime=0 
+2016-02-04 12:46:50.283 INFO  (qtp428746855-19) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1454590010279} status=0 QTime=0 
+2016-02-04 12:46:50.307 INFO  (qtp428746855-22) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1454590010301} status=0 QTime=3 
+2016-02-04 12:46:50.320 INFO  (qtp428746855-18) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={wt=json&_=1454590010317} status=0 QTime=0 
+2016-02-04 12:46:53.604 INFO  (zkCallback-3-thread-6-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@45143d52 name:ZooKeeperConnection Watcher:localhost:2181 got event WatchedEvent state:Disconnected type:None path:null path:null type:None
+2016-02-04 12:46:53.604 INFO  (zkCallback-3-thread-6-processing-n:127.0.1.1:6981_solr) [   ] o.a.s.c.c.ConnectionManager zkClient has disconnected
+2016-02-04 12:46:53.754 INFO  (ShutdownMonitor) [   ] o.e.j.s.ServerConnector Stopped ServerConnector@5c86dbc5{HTTP/1.1}{0.0.0.0:6981}
+2016-02-04 12:46:53.754 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1525409936
+2016-02-04 12:46:53.915 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152ac50c7df0003 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2016-02-04 12:46:55.854 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152ac50c7df0003 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2016-02-04 12:46:56.270 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152ac50c7df0003 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2016-02-04 12:46:58.350 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152ac50c7df0003 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)

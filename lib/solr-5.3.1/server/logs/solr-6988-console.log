@@ -1,0 +1,294 @@
+WARNING: System properties and/or JVM args set.  Consider using --dry-run or --exec
+0    INFO  (main) [   ] o.e.j.u.log Logging initialized @308ms
+126  INFO  (main) [   ] o.e.j.s.Server jetty-9.2.11.v20150529
+144  WARN  (main) [   ] o.e.j.s.h.RequestLogHandler !RequestLog
+145  INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:/home/ryahiaoui/Bureau/solr-5.3.1/server/contexts/] at interval 0
+449  INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+458  WARN  (main) [   ] o.e.j.s.SecurityHandler ServletContext@o.e.j.w.WebAppContext@271053e1{/solr,file:/home/ryahiaoui/Bureau/solr-5.3.1/server/solr-webapp/webapp/,STARTING}{/home/ryahiaoui/Bureau/solr-5.3.1/server/solr-webapp/webapp} has uncovered http methods for path: /
+463  INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init(): WebAppClassLoader=1164371389@4566e5bd
+473  INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+474  INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail
+475  INFO  (main) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/'
+588  INFO  (main) [   ] o.a.s.c.c.SolrZkClient Using default ZkCredentialsProvider
+607  INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+691  INFO  (zkCallback-1-thread-1) [   ] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@5e488840 name:ZooKeeperConnection Watcher:localhost:2181 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+691  INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+691  INFO  (main) [   ] o.a.s.c.c.SolrZkClient Using default ZkACLProvider
+702  INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Loading solr.xml from SolrHome (not found in ZooKeeper)
+703  INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/solr.xml
+760  INFO  (main) [   ] o.a.s.c.CoresLocator Config-defined core root directory: /home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail
+778  INFO  (main) [   ] o.a.s.c.CoreContainer New CoreContainer 1525409936
+778  INFO  (main) [   ] o.a.s.c.CoreContainer Loading cores into CoreContainer [instanceDir=/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/]
+779  INFO  (main) [   ] o.a.s.c.CoreContainer loading shared library: /home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/lib
+779  WARN  (main) [   ] o.a.s.c.SolrResourceLoader Can't find (or read) directory to add to classloader: lib (resolved as: /home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/lib).
+794  INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory created with socketTimeout : 0,connTimeout : 0,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,
+957  INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+960  INFO  (main) [   ] o.a.s.l.LogWatcher SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+961  INFO  (main) [   ] o.a.s.l.LogWatcher Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+962  INFO  (main) [   ] o.a.s.c.ZkContainer Zookeeper client=localhost:2181
+975  INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+1023 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6988_solr) [   ] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@43483b name:ZooKeeperConnection Watcher:localhost:2181 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+1023 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+1074 INFO  (main) [   ] o.a.s.c.c.ZkStateReader Updating cluster state from ZooKeeper... 
+2097 INFO  (main) [   ] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/127.0.1.1:6988_solr
+2135 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /live_nodes/127.0.1.1:6988_solr
+2151 INFO  (main) [   ] o.a.s.c.Overseer Overseer (id=null) closing
+2160 INFO  (main) [   ] o.a.s.c.LeaderElector Joined leadership election with path: /overseer_elect/election/95328225732067337-127.0.1.1:6988_solr-n_0000000003
+2164 INFO  (main) [   ] o.a.s.c.LeaderElector Watching path /overseer_elect/election/95328225732067335-127.0.1.1:6983_solr-n_0000000002 to know if I could be the leader
+2237 INFO  (main) [   ] o.a.s.c.CoreContainer Security conf doesn't exist. Skipping setup for authorization module.
+2237 INFO  (main) [   ] o.a.s.c.CoreContainer No authentication plugin used.
+2270 INFO  (main) [   ] o.a.s.c.CoresLocator Looking for core definitions underneath /home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail
+2293 INFO  (main) [   ] o.a.s.c.SolrCore Created CoreDescriptor: {name=portail, config=solrconfig.xml, transient=false, schema=schema.xml, loadOnStartup=true, configSetProperties=configsetprops.json, instanceDir=/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail, absoluteInstDir=/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/, dataDir=data/, shard=shard1}
+2293 INFO  (main) [   ] o.a.s.c.CoresLocator Found core portail in /home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/
+2294 INFO  (main) [   ] o.a.s.c.CoresLocator Found 1 core definitions
+2296 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.ZkController publishing state=down
+2296 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.ZkController numShards not found on descriptor - reading it from system property
+2296 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter user.dir=/home/ryahiaoui/Bureau/solr-5.3.1/server
+2296 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init() done
+2313 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@271053e1{/solr,file:/home/ryahiaoui/Bureau/solr-5.3.1/server/solr-webapp/webapp/,AVAILABLE}{/home/ryahiaoui/Bureau/solr-5.3.1/server/solr-webapp/webapp}
+2321 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@5c7bfdc1{HTTP/1.1}{0.0.0.0:6988}
+2322 INFO  (main) [   ] o.e.j.s.Server Started @2632ms
+2366 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.ZkController look for our core node name
+2394 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6988_solr) [   ] o.a.s.c.c.ZkStateReader A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 4)
+2399 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6988_solr) [   ] o.a.s.c.c.ZkStateReader Updated cluster state version to 13
+3366 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.ZkController waiting to find shard id in clusterstate for portail
+3367 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.ZkController Check for collection zkNode:portail
+3368 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.ZkController Creating collection in ZooKeeper:portail
+3368 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.ZkController Looking for collection configName
+3368 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.ZkController Could not find explicit collection configName, but found config name matching collection name - using that set.
+3369 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.c.SolrZkClient makePath: /collections/portail
+3419 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.c.ZkStateReader Load collection config from:/collections/portail
+3420 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.c.ZkStateReader path=/collections/portail configName=portail specified config exists in ZooKeeper
+3420 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/'
+3421 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/solrdf-client-1.1.jar' to classloader
+3421 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/joda-time-2.2.jar' to classloader
+3422 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/solrdf-core-1.1.jar' to classloader
+3422 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/xercesImpl-2.11.0.jar' to classloader
+3422 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/junit4-ant-2.1.13.jar' to classloader
+3422 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/jena-arq-2.13.0.jar' to classloader
+3422 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/jcl-over-slf4j-1.7.6.jar' to classloader
+3422 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/commons-csv-1.0.jar' to classloader
+3423 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/xml-apis-1.4.01.jar' to classloader
+3423 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/solrdf-integration-tests-1.1.jar' to classloader
+3423 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/commons-lang3-3.3.2.jar' to classloader
+3423 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/jena-iri-1.1.2.jar' to classloader
+3423 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/httpclient-cache-4.2.6.jar' to classloader
+3423 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/commons-io-2.4.jar' to classloader
+3423 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/asm-commons-4.1.jar' to classloader
+3424 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/commons-lang-2.6.jar' to classloader
+3424 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/dom4j-1.6.1.jar' to classloader
+3424 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/zookeeper-3.4.6.jar' to classloader
+3424 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/log4j-1.2.17.jar' to classloader
+3424 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/org.restlet-2.3.0.jar' to classloader
+3424 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/t-digest-3.1.jar' to classloader
+3424 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/jackson-dataformat-smile-2.5.4.jar' to classloader
+3424 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/stax2-api-3.1.4.jar' to classloader
+3425 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/slf4j-log4j12-1.6.6.jar' to classloader
+3425 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/slf4j-api-1.6.6.jar' to classloader
+3425 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/spatial4j-0.4.1.jar' to classloader
+3425 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/jsonld-java-0.5.1.jar' to classloader
+3425 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/httpclient-4.4.1.jar' to classloader
+3425 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/guava-14.0.1.jar' to classloader
+3425 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/htrace-core-3.0.4.jar' to classloader
+3425 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/randomizedtesting-runner-2.1.13.jar' to classloader
+3426 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/jena-core-2.13.0.jar' to classloader
+3426 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/commons-fileupload-1.2.1.jar' to classloader
+3426 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/httpcore-4.4.1.jar' to classloader
+3426 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/hppc-0.5.2.jar' to classloader
+3426 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/concurrentlinkedhashmap-lru-1.2.jar' to classloader
+3426 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/protobuf-java-2.5.0.jar' to classloader
+3426 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/ant-1.8.2.jar' to classloader
+3426 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/commons-cli-1.2.jar' to classloader
+3427 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/commons-exec-1.3.jar' to classloader
+3427 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/jackson-core-2.5.4.jar' to classloader
+3427 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/libthrift-0.9.2.jar' to classloader
+3427 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/org.restlet.ext.servlet-2.3.0.jar' to classloader
+3427 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/commons-configuration-1.6.jar' to classloader
+3427 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/noggit-0.6.jar' to classloader
+3427 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/jackson-annotations-2.3.0.jar' to classloader
+3427 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/woodstox-core-asl-4.4.1.jar' to classloader
+3427 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/asm-4.1.jar' to classloader
+3427 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/commons-codec-1.10.jar' to classloader
+3427 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/commons-logging-1.2.jar' to classloader
+3428 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/httpmime-4.4.1.jar' to classloader
+3428 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/antlr-runtime-3.5.jar' to classloader
+3428 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/commons-collections-3.2.1.jar' to classloader
+3428 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrResourceLoader Adding 'file:/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/lib/jackson-databind-2.3.3.jar' to classloader
+3444 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.Config loaded config solrconfig.xml with version 0 
+3462 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrConfig current version of requestparams : -1
+3483 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.2.1
+3556 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.Config Loaded SolrConfig: solrconfig.xml
+3564 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.s.IndexSchema Reading Solr Schema from /configs/portail/schema.xml
+3575 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.s.IndexSchema [portail] Schema name=SolRDF
+3615 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.s.IndexSchema unique key field: id
+3617 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/configs/portail', cwd=/home/ryahiaoui/Bureau/solr-5.3.1/server
+3618 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1  x:portail] o.a.s.c.CoreContainer Creating SolrCore 'portail' using configuration from collection portail
+3618 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+3630 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.SolrCore [[portail] ] Opening new SolrCore at [/home/ryahiaoui/Bureau/SolRDF_5/solrdf-download/solrdf/solrdf-integration-tests/target/solrdf-integration-tests-1.1-dev/solrdfPortail/portail/], dataDir=[null]
+3631 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.SolrCore JMX monitoring not detected for core: portail
+3644 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.CachingDirectoryFactory return new directory for /home/ryahiaoui/Bureau/solr-5.3.1/data/node_01_portail/portail/data
+3646 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.SolrCore New index directory detected: old=null new=/home/ryahiaoui/Bureau/solr-5.3.1/data/node_01_portail/portail/data/index/
+3646 WARN  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.SolrCore [portail] Solr index directory '/home/ryahiaoui/Bureau/solr-5.3.1/data/node_01_portail/portail/data/index' doesn't exist. Creating new index...
+3660 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.CachingDirectoryFactory return new directory for /home/ryahiaoui/Bureau/solr-5.3.1/data/node_01_portail/portail/data/index
+3775 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.SolrCore SolrDeletionPolicy.onCommit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/ryahiaoui/Bureau/solr-5.3.1/data/node_01_portail/portail/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@5f4d2b6f; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+3775 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.SolrCore newest commit generation = 1
+3776 INFO  (OldIndexDirectoryCleanupThreadForCore-portail) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.SolrCore Looking for old index directories to cleanup for core portail in /home/ryahiaoui/Bureau/solr-5.3.1/data/node_01_portail/portail/data/
+3908 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+3933 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+3935 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+3936 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+3937 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+3940 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.PluginBag requestHandler : '/replication' created with startup=lazy 
+3954 WARN  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.PluginBag Multiple defaults for : requestHandler
+3960 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+3961 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+3964 WARN  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.admin.AdminHandlers]. Please consult documentation how to replace it accordingly.
+3965 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,,/sparql,/update/json/docs,/admin/luke,/sparql-update,/update/bulk,/get,/admin/properties,/update/json,/admin/threads,/analysis/field,/analysis/document,/sparql-query,/update/csv,/solr-query,/rdf-graph-store,/admin/segments,/admin/system,/replication,/config,/schema,/admin/plugins,/admin/logging,/admin,/admin/ping,/update,/admin/file
+3965 WARN  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.RequestHandlers no default request handler is registered (either '/select' or 'standard')
+3966 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+3976 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+3976 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir=/tmp defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+3984 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.SolrCore Hard AutoCommit: if uncommited for 15000ms; 
+3984 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.SolrCore Soft AutoCommit: if uncommited for 5000ms; 
+3990 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.SolrCore SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/ryahiaoui/Bureau/solr-5.3.1/data/node_01_portail/portail/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@5f4d2b6f; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+3990 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.SolrCore newest commit generation = 1
+4002 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.s.SolrIndexSearcher Opening Searcher@3fbdce19[portail] main
+4008 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.c.ZkStateReader Load collection config from:/collections/portail
+4009 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.c.ZkStateReader path=/collections/portail configName=portail specified config exists in ZooKeeper
+4009 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.r.ManagedResourceStorage Setting up ZooKeeper-based storage for the RestManager with znodeBase: /configs/portail
+4011 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/portail
+4011 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.r.RestManager Initializing RestManager with initArgs: {}
+4020 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using ZooKeeperStorageIO:path=/configs/portail
+4021 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.r.ManagedResourceStorage No data found for znode /configs/portail/_rest_managed.json
+4021 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/portail
+4021 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+4027 WARN  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.h.a.AdminHandlers <requestHandler name="/admin/" 
+ class="solr.admin.AdminHandlers" /> is deprecated . It is not required anymore
+4029 INFO  (searcherExecutor-7-thread-1-processing-n:127.0.1.1:6988_solr x:portail s:shard1 c:portail r:core_node1) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.SolrCore [portail] Registered new searcher Searcher@3fbdce19[portail] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+4029 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+4029 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+4029 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.u.VersionInfo No terms found for _version_, cannot seed version bucket highest value from index
+4029 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1525251634911772672
+4035 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.u.UpdateLog Took 6 ms to seed version buckets with highest version 1525251634911772672
+4036 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.ZkController watch zkdir /configs/portail
+4037 INFO  (coreLoadExecutor-6-thread-1-processing-n:127.0.1.1:6988_solr) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.CoreContainer registering core: portail
+4038 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6988_solr x:portail s:shard1 c:portail r:core_node1) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.ZkController Register replica - core:portail address:http://127.0.1.1:6988/solr collection:portail shard:shard1
+4042 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6988_solr x:portail s:shard1 c:portail r:core_node1) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.c.SolrZkClient makePath: /collections/portail/leader_elect/shard1/election
+4085 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6988_solr x:portail s:shard1 c:portail r:core_node1) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.LeaderElector Joined leadership election with path: /collections/portail/leader_elect/shard1/election/95328225732067337-core_node1-n_0000000000
+4093 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6988_solr x:portail s:shard1 c:portail r:core_node1) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.ShardLeaderElectionContext Running the leader process for shard shard1
+4111 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6988_solr x:portail s:shard1 c:portail r:core_node1) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.ShardLeaderElectionContext Enough replicas found to continue.
+4111 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6988_solr x:portail s:shard1 c:portail r:core_node1) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.ShardLeaderElectionContext I may be the new leader - try and sync
+4112 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6988_solr x:portail s:shard1 c:portail r:core_node1) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.SyncStrategy Sync replicas to http://127.0.1.1:6988/solr/portail/
+4112 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6988_solr x:portail s:shard1 c:portail r:core_node1) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.SyncStrategy Sync Success - now sync replicas to me
+4112 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6988_solr x:portail s:shard1 c:portail r:core_node1) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.SyncStrategy http://127.0.1.1:6988/solr/portail/ has no replicas
+4112 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6988_solr x:portail s:shard1 c:portail r:core_node1) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.ShardLeaderElectionContext I am the new leader: http://127.0.1.1:6988/solr/portail/ shard1
+4113 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6988_solr x:portail s:shard1 c:portail r:core_node1) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.c.SolrZkClient makePath: /collections/portail/leaders/shard1
+4150 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6988_solr) [   ] o.a.s.c.c.ZkStateReader A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 4)
+4170 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6988_solr) [   ] o.a.s.c.c.ZkStateReader Updated cluster state version to 14
+4319 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6988_solr) [   ] o.a.s.c.c.ZkStateReader A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 4)
+4330 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6988_solr) [   ] o.a.s.c.c.ZkStateReader Updated cluster state version to 15
+4345 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6988_solr x:portail s:shard1 c:portail r:core_node1) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.ZkController We are http://127.0.1.1:6988/solr/portail/ and leader is http://127.0.1.1:6988/solr/portail/
+4346 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6988_solr x:portail s:shard1 c:portail r:core_node1) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.ZkController No LogReplay needed for core=portail baseURL=http://127.0.1.1:6988/solr
+4346 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6988_solr x:portail s:shard1 c:portail r:core_node1) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.ZkController I am the leader, no recovery necessary
+4346 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6988_solr x:portail s:shard1 c:portail r:core_node1) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.ZkController publishing state=active
+4346 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:6988_solr x:portail s:shard1 c:portail r:core_node1) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.ZkController numShards not found on descriptor - reading it from system property
+4510 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6988_solr) [   ] o.a.s.c.c.ZkStateReader A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 4)
+4520 INFO  (zkCallback-3-thread-1-processing-n:127.0.1.1:6988_solr) [   ] o.a.s.c.c.ZkStateReader Updated cluster state version to 16
+767000 INFO  (zkCallback-3-thread-3-processing-n:127.0.1.1:6988_solr) [   ] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@43483b name:ZooKeeperConnection Watcher:localhost:2181 got event WatchedEvent state:Disconnected type:None path:null path:null type:None
+767001 INFO  (zkCallback-3-thread-3-processing-n:127.0.1.1:6988_solr) [   ] o.a.s.c.c.ConnectionManager zkClient has disconnected
+767895 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152ac8427d40009 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+769658 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152ac8427d40009 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+770678 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152ac8427d40009 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+772500 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152ac8427d40009 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+772792 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152ac8427d40009 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+774361 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152ac8427d40009 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+775177 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152ac8427d40009 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+777147 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152ac8427d40009 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+778192 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152ac8427d40009 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+779665 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152ac8427d40009 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+779902 INFO  (ShutdownMonitor) [   ] o.e.j.s.ServerConnector Stopped ServerConnector@5c7bfdc1{HTTP/1.1}{0.0.0.0:6988}
+779902 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1525409936
+779903 INFO  (ShutdownMonitor) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.ZkController publishing state=down
+779903 INFO  (ShutdownMonitor) [c:portail s:shard1 r:core_node1 x:portail] o.a.s.c.ZkController numShards not found on descriptor - reading it from system property
+780164 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152ac8427d40009 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+781812 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152ac8427d40009 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+782375 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152ac8427d40009 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+783747 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152ac8427d40009 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+784107 WARN  (main-SendThread(localhost:2181)) [   ] o.a.z.ClientCnxn Session 0x152ac8427d40009 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connexion refusée
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
